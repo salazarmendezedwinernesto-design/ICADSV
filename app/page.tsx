@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"; // Obliga a la página a renderizarse en vivo siempre
 import { Banner } from "@/components/icad/banner";
 import { Ministerios } from "@/components/icad/ministerios";
 import DescriptionChurch from "@/components/icad/descriptionChurch";

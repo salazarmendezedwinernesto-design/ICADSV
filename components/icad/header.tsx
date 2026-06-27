@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -68,10 +67,10 @@ export function Header() {
                 Exploradores del Rey
               </Link>
               <Link
-                href="/misioneritas"
+                href="/explopage"
                 className="block px-4 py-2 text-sm text-white hover:bg-white/10"
               >
-                Misioneritas
+                Explopage
               </Link>
               <Link
                 href="/escuela-biblica"
@@ -142,11 +141,11 @@ export function Header() {
               Exploradores del Rey
             </Link>
             <Link
-              href="/misioneritas"
+              href="/explopage"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
-              Misioneritas
+              Explopage
             </Link>
             <Link
               href="/escuela-biblica"
