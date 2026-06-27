@@ -93,7 +93,7 @@ export function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/nuevas-generaciones/exploradores"
+                    href="/explopage"
                     className="text-base md:text-lg text-gray-400 hover:text-blue-400 transition-colors"
                   >
                     Exploradores del Rey

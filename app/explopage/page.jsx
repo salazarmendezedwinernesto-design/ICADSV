@@ -1,4 +1,4 @@
-import { Banner } from "@/components/icad/banner";
+import { Banner } from "@/components/icad/bannerExplo";
 import HeroExploradores from "@/components/icad/HeroExploradores";
 import CodigoHonor from "@/components/icad/CodigoHonor";
 import ProgramaEdades from "@/components/icad/ProgramaEdadesER";

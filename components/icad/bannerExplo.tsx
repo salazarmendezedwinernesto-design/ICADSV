@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export function Banner() {
   return (
@@ -27,14 +28,15 @@ export function Banner() {
           Bienvenidos
         </span>
 
-        {/* Logo principal */}
-        <Image
-          src="/assets/iglesia.png"
-          alt="Logo Iglesia Canaán"
-          width={1000}
-          height={1000}
-          priority
-          className="
+        {/* Logo principal (enlazado a /explopage) */}
+        <Link href="/explopage" aria-label="Ir a Explopage">
+          <Image
+            src="/assets/ministries/exploradores.png"
+            alt="Logo Exploradores"
+            width={1000}
+            height={1000}
+            priority
+            className="
     w-40
     sm:w-52
     md:w-72
@@ -42,7 +44,8 @@ export function Banner() {
     xl:w-[200px]
     h-auto
   "
-        />
+          />
+        </Link>
 
         {/* Botón estilo Ultimex */}
         <a

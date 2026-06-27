@@ -61,16 +61,16 @@ export function Header() {
             <button className={menuLinkClasses}>Nuevas Generaciones</button>
             <div className="absolute left-0 mt-0 w-48 bg-black/80 rounded hidden group-hover:block">
               <Link
-                href="/exploradores"
+                href="/explopage"
                 className="block px-4 py-2 text-sm text-white hover:bg-white/10"
               >
                 Exploradores del Rey
               </Link>
               <Link
-                href="/explopage"
+                href="/nuevas-generaciones/misioneritas"
                 className="block px-4 py-2 text-sm text-white hover:bg-white/10"
               >
-                Explopage
+                Misioneritas
               </Link>
               <Link
                 href="/escuela-biblica"
@@ -134,18 +134,18 @@ export function Header() {
           </button>
           <div className={mobileSubmenuBg}>
             <Link
-              href="/exploradores"
+              href="/explopage"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
               Exploradores del Rey
             </Link>
             <Link
-              href="/explopage"
+              href="/nuevas-generaciones/misioneritas"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
-              Explopage
+              Misioneritas
             </Link>
             <Link
               href="/escuela-biblica"
