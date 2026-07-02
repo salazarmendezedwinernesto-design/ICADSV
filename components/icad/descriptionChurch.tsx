@@ -72,8 +72,8 @@ export default function DescriptionChurch() {
                 ministerios para alcanzar a niños, jóvenes y adultos.
               </p>
               <p className="text-base mb-6 font-bold italic text-center">
-                "Porque donde están dos o tres congregados en mi nombre, allí
-                estoy yo en medio de ellos." - Mateo 18:20
+                &ldquo;Porque donde están dos o tres congregados en mi
+                nombre, allí estoy yo en medio de ellos.&rdquo; - Mateo 18:20
               </p>
               <div className="flex justify-center mt-6">
                 <Button

@@ -16,7 +16,7 @@ const ministerios: Ministerio[] = [
     id: "ministerio-1",
     nombre: "Exploradores del Rey",
     icono: "/assets/ministries/exploradores.png",
-    enlace: "/nuevas-generaciones/exploradores",
+    enlace: "/explopage",
   },
   {
     id: "ministerio-2",

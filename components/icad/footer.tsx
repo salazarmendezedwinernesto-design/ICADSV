@@ -44,7 +44,7 @@ export function Footer() {
                 className="text-gray-400 hover:text-red-600 transition-colors"
               >
                 <Image
-                  src="assets/icons/facebook.svg"
+                  src="/assets/icons/facebook.svg"
                   alt="Facebook"
                   width={30}
                   height={30}
@@ -54,7 +54,7 @@ export function Footer() {
               {/* Instagram */}
               <Link href="https://www.instagram.com/canaan_.er?igsh=MXR1bWkxbDExNzZ3Ng==">
                 <Image
-                  src="assets/icons/instagram.svg"
+                  src="/assets/icons/instagram.svg"
                   alt="Instagram"
                   width={30}
                   height={30}
@@ -64,7 +64,7 @@ export function Footer() {
               {/* TikTok */}
               <Link href="https://www.tiktok.com/@iglesia_.canaan?_r=1&_t=ZS-94inGjnj8MK">
                 <Image
-                  src="assets/icons/tiktok.svg"
+                  src="/assets/icons/tiktok.svg"
                   alt="TikTok"
                   width={30}
                   height={30}
@@ -74,7 +74,7 @@ export function Footer() {
               {/* WhatsApp */}
               <Link href="https://wa.me/503">
                 <Image
-                  src="assets/icons/whatsapp.svg"
+                  src="/assets/icons/whatsapp.svg"
                   alt="WhatsApp"
                   width={30}
                   height={30}

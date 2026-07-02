@@ -1,4 +1,3 @@
-import Image from "next/image";
 export default function Loading() {
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-950/40 backdrop-blur-xl animate-fade-in">
@@ -14,10 +13,10 @@ export default function Loading() {
           {/* ─── CONTENEDOR DEL LOGO ─── */}
           {/* Puedes usar una etiqueta <img> o un SVG de tu logo aquí */}
           <div className="w-10 h-10 flex items-center justify-center text-blue-400 font-bold text-xl tracking-tighter">
-            {/* Ejemplo con un SVG Icon (puedes reemplazarlo por tu <img src="..." alt="Logo" />) */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="./public/icon.png"
-              alt="Company Logo"
+              src="/icon.png"
+              alt="Logo Iglesia Canaán"
               className="w-8 h-8 object-contain"
             />
           </div>

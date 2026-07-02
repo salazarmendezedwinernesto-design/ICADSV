@@ -31,17 +31,11 @@ export function Banner() {
         <Image
           src="/assets/iglesia.png"
           alt="Logo Iglesia Canaán"
-          width={1000}
-          height={1000}
-          priority
-          className="
-    w-40
-    sm:w-52
-    md:w-72
-    lg:w-96
-    xl:w-[200px]
-    h-auto
-  "
+          width={600}
+          height={600}
+          sizes="(max-width: 600px) 8rem, (max-width: 768px) 12rem, (max-width: 1024px) 14rem, 16rem"
+          preload
+          className="w-32 sm:w-40 md:w-44 lg:w-52 xl:w-60 h-auto"
         />
 
         {/* Botón estilo Ultimex */}

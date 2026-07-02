@@ -28,24 +28,15 @@ export function Banner() {
           Bienvenidos
         </span>
 
-        {/* Logo principal (enlazado a /explopage) */}
-        <Link href="/explopage" aria-label="Ir a Explopage">
-          <Image
-            src="/assets/ministries/exploradores.png"
-            alt="Logo Exploradores"
-            width={1000}
-            height={1000}
-            priority
-            className="
-    w-40
-    sm:w-52
-    md:w-72
-    lg:w-96
-    xl:w-[200px]
-    h-auto
-  "
-          />
-        </Link>
+        {/* Logo principal */}
+        <Image
+          src="/assets/ministries/exploradores.png"
+          alt="Logo Exploradores del Rey"
+          width={800}
+          height={800}
+          sizes="(max-width: 640px) 10rem, (max-width: 768px) 13rem, (max-width: 1024px) 18rem, 20rem"
+          className="w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80 h-auto"
+        />
 
         {/* Botón estilo Ultimex */}
         <a

@@ -220,15 +220,6 @@ export default function services() {
     "Viernes",
     "Sábado",
   ];
-  const tabLabels = [
-    "Domingo",
-    "Lunes",
-    "Martes",
-    "Miércoles",
-    "Jueves",
-    "Viernes",
-    "Sábado",
-  ];
 
   const todayDay = getTodayDay();
 
