@@ -2,41 +2,68 @@
 import { motion } from "framer-motion";
 import SafeComponent from "./SafeComponent";
 
-const valores = [
-  { t: "Espiritual", d: "Ora, lee la Biblia, y testifica" },
-  { t: "Alerta", d: "Está mentalmente, físicamente y espiritualmente alerta" },
-  { t: "Limpio", d: "Es limpio de cuerpo, de mente y de palabra" },
-  { t: "Honrado", d: "No miente, no engaña, ni roba" },
-  { t: "Valiente", d: "Es valiente a pesar del peligro, la crítica o las amenazas" },
-  { t: "Leal", d: "Es leal a su iglesia, a su familia, a su destacamento y a sus amigos" },
-  { t: "Cortés", d: "Es educado, amable y solícito" },
-  { t: "Obediente", d: "Obedece a sus padres, a sus líderes y a sus superiores" },
+const CODIGO_EXPLORADORES = [
+  { t: "Alerta", d: "Mental, física y espiritualmente alerta." },
+  { t: "Limpio", d: "Limpio de cuerpo, de mente y de palabra." },
+  { t: "Honrado", d: "No miente, no engaña, ni roba." },
+  { t: "Valiente", d: "Valiente a pesar del peligro, crítica o amenazas." },
+  { t: "Leal", d: "Leal a la iglesia, familia, destacamento y amigos." },
+  { t: "Cortés", d: "Educado, amable y solícito en todo momento." },
+  { t: "Obediente", d: "Obedece a sus padres, líderes y superiores." },
+  { t: "Espiritual", d: "Ora, lee la Biblia y testifica su fe." },
 ];
 
 export default function CodigoHonor() {
   return (
     <SafeComponent>
-      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#0B1F4D]">
-        <div className="max-w-6xl mx-auto">
-          <span className="block text-center text-xs sm:text-sm font-bold tracking-[4px] uppercase text-[#F2B705] mb-3">
-            Ocho puntas, ocho valores
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-white">
-            Código de Honor
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
-            {valores.map((v, i) => (
+      <section className="py-24 px-8 bg-[#F9F7F2] relative overflow-hidden">
+        {/* Decoración de fondo sutil */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none bg-[radial-gradient(#0B132B_1px,transparent_1px)] [background-size:24px_24px]"></div>
+
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-20 text-center max-w-3xl mx-auto">
+            <motion.h2
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              className="text-4xl sm:text-5xl font-extrabold text-[#0B132B] uppercase tracking-tighter mb-6"
+            >
+              Código de{" "}
+              <span className="text-[#D32F2F]">Exploradores del rey</span>
+            </motion.h2>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "8rem" }}
+              className="h-1.5 bg-[#D32F2F] mx-auto rounded-full"
+            ></motion.div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {CODIGO_EXPLORADORES.map((item, i) => (
               <motion.div
-                key={i}
-                whileHover={{ scale: 1.04, y: -4 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="p-5 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#F2B705]/50 transition-colors"
+                key={item.t}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                whileHover={{ y: -10, transition: { duration: 0.2 } }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="group relative bg-white p-8 rounded-2xl border border-gray-200 shadow-xl hover:border-[#D32F2F] transition-all duration-300"
               >
-                <span className="text-[#F2B705] text-xs font-bold tracking-widest">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="font-bold text-lg text-white mt-2">{v.t}</h3>
-                <p className="text-sm text-white/60 mt-1">{v.d}</p>
+                {/* Indicador de número con efecto */}
+                <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#0B132B] text-[#F9F7F2] font-black flex items-center justify-center rounded-xl shadow-lg group-hover:bg-[#D32F2F] transition-colors">
+                  0{i + 1}
+                </div>
+
+                <div className="mt-4">
+                  <h3 className="text-[#0B132B] text-xl font-bold mb-3 uppercase group-hover:text-[#D32F2F] transition-colors">
+                    {item.t}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {item.d}
+                  </p>
+                </div>
+
+                {/* Detalle visual inferior */}
+                <div className="mt-6 w-8 h-1 bg-gray-100 group-hover:bg-[#D32F2F] transition-colors"></div>
               </motion.div>
             ))}
           </div>

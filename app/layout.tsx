@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Header } from "@/components/icad/header";
+import { HeaderSwitch } from "@/components/icad/HeaderSwitch";
 import { Footer } from "@/components/icad/footer";
 import "./globals.css";
 
@@ -30,7 +30,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="relative min-h-full flex flex-col">
-        <Header />
+        <HeaderSwitch />
         <main>{children}</main>
         <Footer />
       </body>
