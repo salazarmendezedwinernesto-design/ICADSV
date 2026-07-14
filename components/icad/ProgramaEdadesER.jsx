@@ -8,7 +8,7 @@ export default function ProgramaEdades() {
       color: "#1E3A8A",
       logo: "/assets/programas/navegantes.png",
       descripcion:
-        "Programa semanal con un efecto profundo en los más pequeños: evangelización, instrucción y recreación.",
+        "Programa semanal con un efecto profundo en los más pequeños: son la base, son el fudamentos, navegantes en su mejor momento.",
     },
     {
       nombre: "Pioneros",
@@ -48,7 +48,7 @@ export default function ProgramaEdades() {
     <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#F8F5EC]">
       <div className="max-w-6xl mx-auto">
         <span className="block text-center text-xs sm:text-sm font-bold tracking-[4px] uppercase text-[#C8102E] mb-3">
-          Un destacamento para cada edad
+          Un departamento para cada edad
         </span>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-[#0B1F4D]">
           Programa por Edades
@@ -69,10 +69,7 @@ export default function ProgramaEdades() {
                   sizes="80px"
                 />
               </div>
-              <h3
-                className="text-xl font-bold mb-1"
-                style={{ color: g.color }}
-              >
+              <h3 className="text-xl font-bold mb-1" style={{ color: g.color }}>
                 {g.nombre}
               </h3>
               <p className="text-gray-500 text-sm tracking-wide uppercase mb-3">

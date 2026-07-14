@@ -12,13 +12,13 @@ export default function SignificadoEmblema() {
       color: "#C8102E",
       titulo: "4 puntos rojos",
       texto:
-        "Representan las cuatro enseñanzas principales de la Iglesia: Salvación, Bautismo en el Espíritu Santo, Sanidad y Segunda Venida.",
+        "Representan las cuatro enseñanzas principales de la Iglesia: Salvación, Bautismo en el Espíritu Santo, Sanidad divina y Segunda Venida.",
     },
     {
       color: "#1E3A8A",
       titulo: "8 puntos azules",
       texto:
-        "Representan el Código de los Exploradores del Rey: espiritual, alerta, limpio, honrado, valiente, leal, cortés y obediente.",
+        "Representan el Código de los Exploradores del Rey: alerta, limpio, honrado, valiente, leal, cortés y obediente, espiritual.",
     },
   ];
 

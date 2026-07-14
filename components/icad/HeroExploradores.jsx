@@ -17,12 +17,13 @@ export default function HeroExploradores() {
           </h2>
           <p className="text-base sm:text-lg leading-relaxed mb-4 text-gray-700">
             Ministerio internacional de las Asambleas de Dios, dedicado a
-            evangelizar, equipar y empoderar a la próxima generación.
+            evangelizar, equipar y empoderar a las nuevas generación de niños y
+            niñas.
           </p>
           <p className="text-base sm:text-lg leading-relaxed text-gray-700">
-            Formamos el carácter mediante disciplina, responsabilidad y
-            valores bíblicos desde 1962, acompañando a cada niño y joven en su
-            camino de fe.
+            Formamos el carácter mediante disciplina, responsabilidad y valores
+            bíblicos desde 1962, acompañando a cada niño y joven en su camino de
+            fe.
           </p>
 
           <div className="mt-6 flex items-start gap-3 rounded-xl bg-[#0B1F4D]/5 border border-[#0B1F4D]/10 px-5 py-4">

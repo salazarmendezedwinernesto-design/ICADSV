@@ -6,7 +6,7 @@ const CODIGO_EXPLORADORES = [
   { t: "Alerta", d: "Mental, física y espiritualmente alerta." },
   { t: "Limpio", d: "Limpio de cuerpo, de mente y de palabra." },
   { t: "Honrado", d: "No miente, no engaña, ni roba." },
-  { t: "Valiente", d: "Valiente a pesar del peligro, crítica o amenazas." },
+  { t: "Valiente", d: "Valiente a pesar del peligro, críticas o amenazas." },
   { t: "Leal", d: "Leal a la iglesia, familia, destacamento y amigos." },
   { t: "Cortés", d: "Educado, amable y solícito en todo momento." },
   { t: "Obediente", d: "Obedece a sus padres, líderes y superiores." },
