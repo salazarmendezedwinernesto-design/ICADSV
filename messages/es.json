@@ -1,0 +1,17 @@
+{
+  "app": {
+    "metadata": {
+      "title": "ICAD",
+      "description": "Iglesia Canaán de las Asambleas de Dios"
+    },
+    "index": {
+      "btnVerMas": "Ver mas",
+      "bienvenidaPrincipal": "Bienvenida",
+      "parrafoBienvenida1": "parrafo 1",
+      "ubicacion": "ubicacion"
+    },
+    "misioneritas": {
+      "titulo": "titulo"
+    }
+  }
+}

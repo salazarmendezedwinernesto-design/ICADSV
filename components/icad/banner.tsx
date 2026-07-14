@@ -1,8 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export function Banner() {
+  const t = useTranslations("app.index");
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Video de fondo */}
@@ -49,7 +51,7 @@ export function Banner() {
           {/* Esquina inferior derecha */}
           <span className="absolute -bottom-2 -right-2 w-6 h-6 border-r-2 border-b-2 border-white transition-all duration-300 group-hover:w-8 group-hover:h-8"></span>
 
-          <span className="relative z-10">SABER MÁS</span>
+          <span className="relative z-10">{t("btnVerMas")}</span>
         </a>
       </div>
     </section>
