@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { Header } from "@/components/icad/header";
-import { HeaderExplo } from "@/components/icad/headerExplo";
+import { HeaderExplo } from "@/components/exploradores/headerExplo";
 
 // Muestra el header normal en todo el sitio, y el header de
 // Nuevas Generaciones (con el dropdown de Exploradores/Misioneritas)

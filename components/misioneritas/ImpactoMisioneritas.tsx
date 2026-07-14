@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import SafeComponent from "./SafeComponent";
+import SafeComponent from "../icad/SafeComponent";
 
 const HITOS = [
   {

@@ -1,10 +1,10 @@
-import { BannerMisioneritas } from "@/components/icad/bannerMisioneritas";
-import HeroMisioneritas from "@/components/icad/HeroMisioneritas";
-import DivisionesMisioneritas from "@/components/icad/DivisionesMisioneritas";
-import PromesasMisioneritas from "@/components/icad/PromesasMisioneritas";
-import CodigoLemaMisioneritas from "@/components/icad/CodigoLemaMisioneritas";
-import ImpactoMisioneritas from "@/components/icad/ImpactoMisioneritas";
-import UneteMisioneritas from "@/components/icad/UneteMisioneritas";
+import { BannerMisioneritas } from "@/components/misioneritas/bannerMisioneritas";
+import HeroMisioneritas from "@/components/misioneritas/HeroMisioneritas";
+import DivisionesMisioneritas from "@/components/misioneritas/DivisionesMisioneritas";
+import PromesasMisioneritas from "@/components/misioneritas/PromesasMisioneritas";
+import CodigoLemaMisioneritas from "@/components/misioneritas/CodigoLemaMisioneritas";
+import ImpactoMisioneritas from "@/components/misioneritas/ImpactoMisioneritas";
+import UneteMisioneritas from "@/components/misioneritas/UneteMisioneritas";
 
 export default function MisioneritasPage() {
   return (

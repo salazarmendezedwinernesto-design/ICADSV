@@ -1,9 +1,9 @@
-import { Banner } from "@/components/icad/bannerExplo";
-import HeroExploradores from "@/components/icad/HeroExploradores";
-import CodigoHonor from "@/components/icad/CodigoHonor";
-import SignificadoEmblema from "@/components/icad/SignificadoEmblema";
-import ProgramaEdades from "@/components/icad/ProgramaEdadesER";
-import UneteExplo from "@/components/icad/UneteExplo";
+import { Banner } from "@/components/exploradores/bannerExplo";
+import HeroExploradores from "@/components/exploradores/HeroExploradores";
+import CodigoHonor from "@/components/exploradores/CodigoHonor";
+import SignificadoEmblema from "@/components/exploradores/SignificadoEmblema";
+import ProgramaEdades from "@/components/exploradores/ProgramaEdadesER";
+import UneteExplo from "@/components/exploradores/UneteExplo";
 
 export default function Home() {
   return (

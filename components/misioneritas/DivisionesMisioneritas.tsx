@@ -2,7 +2,7 @@
 
 import { Rainbow, Flower2, Heart, Star } from "lucide-react";
 import { motion } from "framer-motion";
-import SafeComponent from "./SafeComponent";
+import SafeComponent from "../icad/SafeComponent";
 
 const DIVISIONES = [
   {

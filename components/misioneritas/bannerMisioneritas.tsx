@@ -35,12 +35,12 @@ export function BannerMisioneritas() {
             width={800}
             height={800}
             sizes="(max-width: 640px) 8rem, (max-width: 768px) 10rem, (max-width: 1024px) 12rem, 14rem"
-            className="relative h-auto w-[7rem] sm:w-[9rem] md:w-[11rem] lg:w-[13rem] xl:w-[15rem] drop-shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+            className="relative h-auto w-28 sm:w-36 md:w-44 lg:w-52 xl:w-60 drop-shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
           />
         </div>
 
         {/* Línea decorativa celeste */}
-        <div className="mt-6 h-[3px] w-20 rounded-full bg-gradient-to-r from-transparent via-[#5DD4EF] to-transparent" />
+        <div className="mt-6 h-0.75 w-20 rounded-full bg-linear-to-r from-transparent via-[#5DD4EF] to-transparent" />
 
         {/* Botón estilo blanco */}
         <a
