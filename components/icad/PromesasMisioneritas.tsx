@@ -26,7 +26,7 @@ export default function PromesasMisioneritas() {
     <SafeComponent>
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-[#0B1F4D] relative overflow-hidden">
         {/* Textura sutil de fondo */}
-        <div className="absolute inset-0 opacity-[0.06] pointer-events-none bg-[radial-gradient(#5DD4EF_1px,transparent_1px)] [background-size:26px_26px]" />
+        <div className="absolute inset-0 opacity-[0.06] pointer-events-none bg-[radial-gradient(#5DD4EF_1px,transparent_1px)] [bg-size:26px_26px]" />
 
         <div className="max-w-6xl mx-auto relative">
           <span className="block text-center text-xs sm:text-sm font-bold tracking-[4px] uppercase text-[#5DD4EF] mb-3">
@@ -44,7 +44,7 @@ export default function PromesasMisioneritas() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.12, duration: 0.5 }}
-                className="relative bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7 flex flex-col hover:border-[#5DD4EF]/50 transition-colors duration-300"
+                className="relative bg-white/6 backdrop-blur-sm border border-white/10 rounded-2xl p-7 flex flex-col hover:border-[#5DD4EF]/50 transition-colors duration-300"
               >
                 <span className="text-4xl font-extrabold text-[#5DD4EF]/40 leading-none mb-3">
                   &ldquo;

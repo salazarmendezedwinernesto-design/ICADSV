@@ -33,7 +33,7 @@ export default function ImpactoMisioneritas() {
 
           <div className="relative">
             {/* Línea vertical */}
-            <div className="absolute left-[15px] sm:left-1/2 top-2 bottom-2 w-[3px] bg-gradient-to-b from-[#5DD4EF] via-[#0E9BC7] to-[#0B1F4D] sm:-translate-x-1/2" />
+            <div className="absolute left-3.75 sm:left-1/2 top-2 bottom-2 w-0.75 bg-linear-to-b from-[#5DD4EF] via-[#0E9BC7] to-[#0B1F4D] sm:-translate-x-1/2" />
 
             <div className="space-y-10">
               {HITOS.map((h, i) => (

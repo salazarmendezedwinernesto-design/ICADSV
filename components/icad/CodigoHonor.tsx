@@ -18,7 +18,7 @@ export default function CodigoHonor() {
     <SafeComponent>
       <section className="py-24 px-8 bg-[#F9F7F2] relative overflow-hidden">
         {/* Decoración de fondo sutil */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none bg-[radial-gradient(#0B132B_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none bg-[radial-gradient(#0B132B_1px,transparent_1px)] bg-size-[24px_24px]"></div>
 
         <div className="max-w-7xl mx-auto">
           <div className="mb-20 text-center max-w-3xl mx-auto">

@@ -23,14 +23,14 @@ export default function HeroMisioneritas() {
             ¿Qué es <span className="text-[#0E9BC7]">Misioneritas</span>?
           </h2>
           <p className="text-base sm:text-lg leading-relaxed mb-4 text-gray-700">
-            Misioneritas es un ministerio cristiano de las Asambleas de Dios
-            que busca formar y discipular a niñas, adolescentes y señoritas
-            en la Palabra de Dios.
+            Misioneritas es un ministerio cristiano de las Asambleas de Dios que
+            busca formar y discipular a niñas, adolescentes y señoritas en la
+            Palabra de Dios.
           </p>
           <p className="text-base sm:text-lg leading-relaxed text-gray-700">
             Su propósito es guiarlas en un crecimiento integral —espiritual,
-            físico, mental y social— para que sean testigos de Cristo y
-            líderes en sus iglesias.
+            físico, mental y social— para que sean testigos de Cristo y líderes
+            en sus iglesias.
           </p>
 
           <div className="mt-8">
@@ -59,9 +59,9 @@ export default function HeroMisioneritas() {
               alt="Niñas y líderes de Misioneritas en una actividad de la iglesia"
               width={900}
               height={700}
-              className="w-full h-[280px] sm:h-[360px] md:h-[420px] object-cover"
+              className="w-full h-70 sm:h-90 md:h-105 object-cover"
             />
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#0B1F4D]/80 to-transparent px-5 py-4">
+            <div className="absolute bottom-0 inset-x-0 bg-linear-to-t from-[#0B1F4D]/80 to-transparent px-5 py-4">
               <p className="text-white text-sm sm:text-base font-medium">
                 Actividad de Misioneritas
               </p>

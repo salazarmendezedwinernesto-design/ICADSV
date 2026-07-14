@@ -54,16 +54,16 @@ export default function UneteMisioneritas() {
               {[...fotos, ...fotos].map((foto, i) => (
                 <div
                   key={i}
-                  className="flex-shrink-0 w-72 h-96 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-500 ring-2 ring-[#5DD4EF]/30"
+                  className="shrink-0 w-72 h-96 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-500 ring-2 ring-[#5DD4EF]/30"
                 >
                   <img
                     src={foto}
                     alt={`Misionerita ${i}`}
                     className="w-full h-full object-cover"
-                    onError={(e) =>
-                      (e.target.src =
-                        "https://via.placeholder.com/300x500?text=Foto")
-                    }
+                    onError={(e) => {
+                      e.currentTarget.src =
+                        "https://via.placeholder.com/300x500?text=Foto";
+                    }}
                   />
                 </div>
               ))}

@@ -67,9 +67,9 @@ export default function HeroExploradores() {
               alt="Niños y líderes de Exploradores del Rey en un culto de Nuevas Generaciones"
               width={900}
               height={700}
-              className="w-full h-[280px] sm:h-[360px] md:h-[420px] object-cover"
+              className="w-full h-70 sm:h-90 md:h-105 object-cover"
             />
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#0B1F4D]/80 to-transparent px-5 py-4">
+            <div className="absolute bottom-0 inset-x-0 bg-linear-to-t from-[#0B1F4D]/80 to-transparent px-5 py-4">
               <p className="text-white text-sm sm:text-base font-medium">
                 Culto de Nuevas Generaciones
               </p>
