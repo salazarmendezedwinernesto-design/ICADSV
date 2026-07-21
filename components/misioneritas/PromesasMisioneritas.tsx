@@ -1,27 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import SafeComponent from "../icad/SafeComponent";
 
-const PROMESAS = [
-  {
-    titulo: "Promesa a la Bandera Cristiana",
-    texto:
-      "Prometo lealtad a la bandera cristiana y al Salvador cuyo reino representa: una hermandad que une a todos los verdaderos creyentes en el servicio y en amor.",
-  },
-  {
-    titulo: "Promesa a la Bandera de las Misioneritas",
-    texto:
-      "Prometo lealtad a la bandera de las Misioneritas y con la ayuda de Dios haré todo lo que pueda para mantener bien en alto los ideales de las Misioneritas, para ser fiel administradora de mi tiempo, talento y dinero, ejercer mi ministerio en favor de los demás, permanecer en Él mediante la oración y el estudio bíblico y testificar como misionerita.",
-  },
-  {
-    titulo: "Promesa a la Biblia",
-    texto:
-      "Prometo lealtad a la Biblia, Santa Palabra de Dios. La constituiré en lámpara a mis pies y luz a mi camino, y atesoraré sus palabras en mi corazón, a fin de no pecar contra Dios.",
-  },
-];
+const PROMESA_KEYS = [
+  "banderaCristiana",
+  "banderaMisioneritas",
+  "biblia",
+] as const;
 
 export default function PromesasMisioneritas() {
+  const t = useTranslations("app.misioneritas.promesas");
   return (
     <SafeComponent>
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-[#0B1F4D] relative overflow-hidden">
@@ -30,16 +20,16 @@ export default function PromesasMisioneritas() {
 
         <div className="max-w-6xl mx-auto relative">
           <span className="block text-center text-xs sm:text-sm font-bold tracking-[4px] uppercase text-[#5DD4EF] mb-3">
-            Compromiso y carácter
+            {t("kicker")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-12 sm:mb-16 text-white">
-            Nuestras Promesas
+            {t("titulo")}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {PROMESAS.map((p, i) => (
+            {PROMESA_KEYS.map((key, i) => (
               <motion.div
-                key={p.titulo}
+                key={key}
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -50,10 +40,10 @@ export default function PromesasMisioneritas() {
                   &ldquo;
                 </span>
                 <h3 className="text-white font-bold text-lg mb-3 leading-snug">
-                  {p.titulo}
+                  {t(`items.${key}.titulo`)}
                 </h3>
                 <p className="text-[#CFE9F2] text-sm leading-relaxed">
-                  {p.texto}
+                  {t(`items.${key}.texto`)}
                 </p>
               </motion.div>
             ))}

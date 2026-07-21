@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export function Banner() {
+  const t = useTranslations("app.explopage.banner");
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Video de fondo */}
@@ -25,7 +27,7 @@ export function Banner() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4">
         {/* Texto superior */}
         <span className="mb-6 text-sm md:text-lg tracking-[8px] text-white uppercase">
-          Bienvenidos
+          {t("bienvenidos")}
         </span>
 
         {/* Logo principal */}
@@ -49,7 +51,7 @@ export function Banner() {
           {/* Esquina inferior derecha */}
           <span className="absolute -bottom-2 -right-2 w-6 h-6 border-r-2 border-b-2 border-white transition-all duration-300 group-hover:w-8 group-hover:h-8"></span>
 
-          <span className="relative z-10">SABER MÁS</span>
+          <span className="relative z-10">{t("saberMas")}</span>
         </a>
       </div>
     </section>

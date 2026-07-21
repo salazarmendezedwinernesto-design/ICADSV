@@ -4,14 +4,345 @@
       "title": "ICAD",
       "description": "Iglesia Canaán de las Asambleas de Dios"
     },
+    "loading": {
+      "bienvenido": "BIENVENIDO",
+      "porFavorEspera": "Por favor, espera un momento..."
+    },
+    "nav": {
+      "inicio": "Inicio",
+      "nuevasGeneraciones": "Nuevas Generaciones",
+      "exploradoresDelRey": "Exploradores del Rey",
+      "misioneritas": "Misioneritas",
+      "escuelaBiblica": "Escuela Bíblica",
+      "embajadoresDeCristo": "Embajadores de Cristo",
+      "fraternidad": "Fraternidad",
+      "concilio": "Concilio",
+      "misiones": "Misiones",
+      "media": "Media",
+      "irAPaginaPrincipal": "Ir a la página principal",
+      "toggleMenu": "Toggle menu"
+    },
+    "footer": {
+      "descripcion": "Puedes comunicarte con nosotros por redes sociales, WhatsApp o visitarnos en nuestra ubicación.",
+      "direccion": "1a Calle oriente, Barrio El Centro El Refugio, Ahuachapán Norte",
+      "correo": "iglesiacanaanelrefugio@gmail.com",
+      "telefono": "+503 2407 2518",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "whatsapp": "WhatsApp",
+      "tituloNuevasGeneraciones": "Nuevas Generaciones",
+      "tituloMinisterios": "Ministerios",
+      "linkExploradoresDelRey": "Exploradores del Rey",
+      "linkMisioneritas": "Misioneritas",
+      "linkEscuelaBiblica": "Escuela Biblica",
+      "linkEmbajadoresDeCristo": "Embajadores de Cristo",
+      "linkFraternidad": "Fraternidad",
+      "linkConcilio": "Concilio",
+      "linkMisiones": "Misiones",
+      "linkMedia": "Media",
+      "derechosReservados": "© {year} ICAD.",
+      "todosLosDerechosReservados": "Todos los derechos reservados.",
+      "desarrolladoPor": "Desarrollado por",
+      "desarrollador": "Edwin Salazar"
+    },
     "index": {
       "btnVerMas": "Ver mas",
-      "bienvenidaPrincipal": "Bienvenida",
-      "parrafoBienvenida1": "parrafo 1",
-      "ubicacion": "ubicacion"
+      "bienvenidaPrincipal": "Bienvenidos",
+      "banner": {
+        "bienvenidos": "Bienvenidos",
+        "btnVerMas": "Ver mas"
+      },
+      "descripcion": {
+        "titulo": "Bienvenidos a Iglesia Canaán",
+        "parrafo1": "La Iglesia Canaán de las Asambleas de Dios es una comunidad cristiana dedicada a compartir el mensaje del evangelio de Jesucristo con amor, fe y compromiso.",
+        "parrafo2": "Nuestro propósito es guiar a cada persona a tener una relación personal con Dios, crecer espiritualmente y vivir conforme a los principios de la palabra de Dios.",
+        "parrafo3": "En nuestra iglesia creemos que cada persona tiene un propósito especial en el plan de Dios. Por eso trabajamos en diferentes ministerios para alcanzar a niños, jóvenes y adultos.",
+        "cita": "\"Porque donde están dos o tres congregados en mi nombre, allí estoy yo en medio de ellos.\" - Mateo 18:20",
+        "btnVisitanos": "VISITANOS",
+        "valores": {
+          "fe": {
+            "titulo": "Nuestra Fe",
+            "descripcion": "Creemos en Jesucristo como nuestro Señor y Salvador y en la autoridad de la Biblia como la palabra de Dios."
+          },
+          "comunidad": {
+            "titulo": "Nuestra Comunidad",
+            "descripcion": "Somos una familia espiritual donde cada persona es bienvenida y puede crecer en su fe."
+          },
+          "mision": {
+            "titulo": "Nuestra Misión",
+            "descripcion": "Predicar el evangelio, discipular creyentes y servir a nuestra comunidad."
+          }
+        }
+      },
+      "servicios": {
+        "titulo": "Servicios",
+        "subtitulo": "Puedes acompañarnos durante todos nuestros servicios.",
+        "dias": {
+          "domingo": "Domingo",
+          "lunes": "Lunes",
+          "martes": "Martes",
+          "miercoles": "Miércoles",
+          "jueves": "Jueves",
+          "viernes": "Viernes",
+          "sabado": "Sábado"
+        },
+        "eventos": {
+          "lunes": "Nuevas Generaciones, Culto Unido de Misioneritas y Exploradores",
+          "martes": "Concilio Misionero Femenil 'CMF'",
+          "miercoles": "Oración e intersecion en el templo y transmisión en vivo en Facebook de Conectados con Dios",
+          "jueves": "Fraternidad de Varones 'FV'",
+          "viernes": "Enseñanza de Escuela Bíblica y CCDL",
+          "sabado": "Culto de Jóvenes 'EDC'",
+          "domingo": "Culto General"
+        },
+        "estado": {
+          "ahora": "¡Ahora!",
+          "faltaHora": "Falta {hours} hora",
+          "faltaHoras": "Falta {hours} horas",
+          "faltanDia": "Faltan {days} día",
+          "faltanDias": "Faltan {days} días",
+          "faltanDiaYHora": "Faltan {days} día y {hours} hora",
+          "faltanDiaYHoras": "Faltan {days} día y {hours} horas",
+          "faltanDiasYHora": "Faltan {days} días y {hours} hora",
+          "faltanDiasYHoras": "Faltan {days} días y {hours} horas",
+          "transmitiendoEnVivo": "🔴 Transmitiendo en vivo",
+          "cultoFinalizado": "Culto finalizado"
+        }
+      },
+      "ministerios": {
+        "titulo": "Nuestros Ministerios",
+        "lista": {
+          "exploradoresDelRey": "Exploradores del Rey",
+          "misioneritas": "Misioneritas",
+          "escuelaBiblica": "Escuela Biblica",
+          "fraternidadDeVarones": "Fraternidad de Varones",
+          "concilioMisioneroFemenil": "Concilio Misionero Femenil",
+          "misiones": "Misiones",
+          "embajadoresDeCristo": "Embajadores de Cristo"
+        }
+      },
+      "ubicacion": {
+        "titulo": "Nuestra Ubicación",
+        "descripcion": "Nos encontramos en 1a Calle oriente, Barrio El Centro El Refugio, Ahuachapán Norte. Te esperamos para adorar juntos. Puedes visitarnos en la dirección que se muestra a continuación.",
+        "tituloMapa": "Ubicación Iglesia Canaán"
+      }
+    },
+    "explopage": {
+      "banner": {
+        "bienvenidos": "Bienvenidos",
+        "saberMas": "SABER MÁS"
+      },
+      "hero": {
+        "kicker": "Ministerio de Nuevas Generaciones",
+        "titulo": "Exploradores",
+        "tituloResaltado": "del Rey",
+        "parrafo1": "Ministerio internacional de las Asambleas de Dios, dedicado a evangelizar, equipar y empoderar a las nuevas generación de niños y niñas.",
+        "parrafo2": "Formamos el carácter mediante disciplina, responsabilidad y valores bíblicos desde 1962, acompañando a cada niño y joven en su camino de fe.",
+        "cita": "¡Preparado para todo! Preparado para trabajar, jugar, servir, adorar, vivir y obedecer a la palabra de Dios.",
+        "badgeDesde1962": "Desde 1962",
+        "badgeAsambleasDeDios": "Asambleas de Dios",
+        "badgeHorario": "Lunes, 6:00 PM",
+        "fotoAlt": "Niños y líderes de Exploradores del Rey en un culto de Nuevas Generaciones",
+        "fotoCaption": "Culto de Nuevas Generaciones"
+      },
+      "codigoHonor": {
+        "titulo": "Código de",
+        "tituloResaltado": "Exploradores del rey",
+        "items": {
+          "alerta": {
+            "titulo": "Alerta",
+            "descripcion": "Mental, física y espiritualmente alerta."
+          },
+          "limpio": {
+            "titulo": "Limpio",
+            "descripcion": "Limpio de cuerpo, de mente y de palabra."
+          },
+          "honrado": {
+            "titulo": "Honrado",
+            "descripcion": "No miente, no engaña, ni roba."
+          },
+          "valiente": {
+            "titulo": "Valiente",
+            "descripcion": "Valiente a pesar del peligro, críticas o amenazas."
+          },
+          "leal": {
+            "titulo": "Leal",
+            "descripcion": "Leal a la iglesia, familia, destacamento y amigos."
+          },
+          "cortes": {
+            "titulo": "Cortés",
+            "descripcion": "Educado, amable y solícito en todo momento."
+          },
+          "obediente": {
+            "titulo": "Obediente",
+            "descripcion": "Obedece a sus padres, líderes y superiores."
+          },
+          "espiritual": {
+            "titulo": "Espiritual",
+            "descripcion": "Ora, lee la Biblia y testifica su fe."
+          }
+        }
+      },
+      "significadoEmblema": {
+        "kicker": "Significado del Emblema",
+        "titulo": "Una brújula que apunta a Cristo",
+        "parrafo": "El diseño está basado en los puntos cardinales, para recordarnos dirigir siempre nuestra atención a Jesús.",
+        "fotoAlt": "Brújula del emblema de Exploradores del Rey",
+        "puntos": {
+          "dorados": {
+            "titulo": "4 puntos dorados",
+            "texto": "Representan los cuatro aspectos del crecimiento del joven: físico, espiritual, mental y social."
+          },
+          "rojos": {
+            "titulo": "4 puntos rojos",
+            "texto": "Representan las cuatro enseñanzas principales de la Iglesia: Salvación, Bautismo en el Espíritu Santo, Sanidad divina y Segunda Venida."
+          },
+          "azules": {
+            "titulo": "8 puntos azules",
+            "texto": "Representan el Código de los Exploradores del Rey: alerta, limpio, honrado, valiente, leal, cortés y obediente, espiritual."
+          }
+        }
+      },
+      "programaEdades": {
+        "kicker": "Un departamento para cada edad",
+        "titulo": "Programa por Edades",
+        "grupos": {
+          "navegantes": {
+            "nombre": "Navegantes",
+            "edad": "5 a 7 años",
+            "descripcion": "Programa semanal con un efecto profundo en los más pequeños: son la base, son el fudamentos, navegantes en su mejor momento."
+          },
+          "pioneros": {
+            "nombre": "Pioneros",
+            "edad": "8 a 10 años",
+            "descripcion": "Empiezan a interesarse por las actividades al aire libre: caminatas, campamentos y exploración."
+          },
+          "seguidoresDeLaSenda": {
+            "nombre": "Seguidores de la Senda",
+            "edad": "11 a 13 años",
+            "descripcion": "Acompañamos una etapa de muchos cambios con evangelización, enseñanza y recreación."
+          },
+          "exploradores": {
+            "nombre": "Exploradores",
+            "edad": "14 a 17 años",
+            "descripcion": "Crecimiento personal y liderazgo a través de retos de acción, servicio cristiano y vida al aire libre."
+          },
+          "senoritas": {
+            "nombre": "Señoritas",
+            "edad": "5 a 17 años",
+            "descripcion": "Las niñas y jóvenes participan con las mismas posibilidades y derechos, según su edad cronológica."
+          }
+        }
+      },
+      "uneteExplo": {
+        "titulo": "Únete a la",
+        "tituloResaltado": "aventura",
+        "parrafo": "Forma parte de Exploradores del Rey. Desarrollamos carácter, disciplina y propósito en cada lunes a las 6:00 PM en Iglesia Canaán.",
+        "btnConocerPrograma": "Conocer programa",
+        "btnWhatsapp": "WhatsApp"
+      }
     },
     "misioneritas": {
-      "titulo": "titulo"
+      "titulo": "titulo",
+      "banner": {
+        "bienvenidas": "Bienvenidas",
+        "saberMas": "SABER MÁS"
+      },
+      "hero": {
+        "kicker": "Ministerio de Nuevas Generaciones",
+        "titulo": "¿Qué es",
+        "tituloResaltado": "Misioneritas",
+        "parrafo1": "Misioneritas es un ministerio cristiano de las Asambleas de Dios que busca formar y discipular a niñas, adolescentes y señoritas en la Palabra de Dios.",
+        "parrafo2": "Su propósito es guiarlas en un crecimiento integral —espiritual, físico, mental y social— para que sean testigos de Cristo y líderes en sus iglesias.",
+        "objetivosTitulo": "Objetivos",
+        "objetivos": {
+          "ganar": "Ganar a niñas y jóvenes para Cristo.",
+          "ensenar": "Enseñar la Biblia y establecer bases sólidas en la fe.",
+          "promover": "Promover valores como bondad, servicio, amor y testimonio.",
+          "preparar": "Prepararlas para servir en la misión y liderazgo cristiano."
+        },
+        "fotoAlt": "Niñas y líderes de Misioneritas en una actividad de la iglesia",
+        "fotoCaption": "Actividad de Misioneritas"
+      },
+      "divisiones": {
+        "kicker": "Un destacamento para cada edad",
+        "titulo": "Divisiones",
+        "parrafo": "Cada división tiene su propia banda de color, materiales y lema, acompañando a cada niña según su etapa de crecimiento.",
+        "items": {
+          "arcoIris": {
+            "nombre": "Arco Iris",
+            "sub": "Párvulos",
+            "descripcion": "Las más pequeñas del ministerio, dando sus primeros pasos en el conocimiento de Dios a través del juego y las historias bíblicas."
+          },
+          "margaritas": {
+            "nombre": "Margaritas",
+            "sub": "Niñas más pequeñas",
+            "descripcion": "Niñas que empiezan a crecer en la fe, aprendiendo valores y hábitos cristianos de forma sencilla y alegre."
+          },
+          "rosas": {
+            "nombre": "Rosas",
+            "sub": "Pre-adolescentes",
+            "descripcion": "Encanto y pureza en una etapa de cambios: fortalecen su identidad y su relación personal con Cristo."
+          },
+          "estrellas": {
+            "nombre": "Estrellas",
+            "sub": "Adolescentes",
+            "descripcion": "Estrellas y Estrellas de Honor se preparan para el liderazgo, el servicio y el testimonio dentro de la iglesia."
+          }
+        },
+        "notaFinal": "Existen más departamentos dentro de Misioneritas; por el momento trabajamos con estos cuatro."
+      },
+      "promesas": {
+        "kicker": "Compromiso y carácter",
+        "titulo": "Nuestras Promesas",
+        "items": {
+          "banderaCristiana": {
+            "titulo": "Promesa a la Bandera Cristiana",
+            "texto": "Prometo lealtad a la bandera cristiana y al Salvador cuyo reino representa: una hermandad que une a todos los verdaderos creyentes en el servicio y en amor."
+          },
+          "banderaMisioneritas": {
+            "titulo": "Promesa a la Bandera de las Misioneritas",
+            "texto": "Prometo lealtad a la bandera de las Misioneritas y con la ayuda de Dios haré todo lo que pueda para mantener bien en alto los ideales de las Misioneritas, para ser fiel administradora de mi tiempo, talento y dinero, ejercer mi ministerio en favor de los demás, permanecer en Él mediante la oración y el estudio bíblico y testificar como misionerita."
+          },
+          "biblia": {
+            "titulo": "Promesa a la Biblia",
+            "texto": "Prometo lealtad a la Biblia, Santa Palabra de Dios. La constituiré en lámpara a mis pies y luz a mi camino, y atesoraré sus palabras en mi corazón, a fin de no pecar contra Dios."
+          }
+        }
+      },
+      "codigoLema": {
+        "kicker": "Código y Lema",
+        "titulo": "Filipenses 4:8",
+        "cita": "\"Todo lo que es verdadero, todo lo honesto, todo lo justo, todo lo puro, todo lo amable, todo lo que es de buen nombre; si hay virtud alguna, si algo digno de alabanza, en esto pensad.\"",
+        "lemaGeneralLabel": "Lema General",
+        "lemaGeneral": "\"Porque nos interesamos, servimos.\""
+      },
+      "impacto": {
+        "kicker": "Su Impacto",
+        "titulo": "Una historia de servicio",
+        "hitos": {
+          "fundacion": {
+            "anio": "1956",
+            "texto": "Fundado en Estados Unidos."
+          },
+          "expansion": {
+            "anio": "Años 60",
+            "texto": "Expandido a Latinoamérica."
+          },
+          "hoy": {
+            "anio": "Hoy",
+            "texto": "Miles de grupos y líderes en varios países, consolidándose como un ministerio fundamental en las iglesias."
+          }
+        }
+      },
+      "unete": {
+        "titulo": "Únete a",
+        "tituloResaltado": "Misioneritas",
+        "parrafo": "Forma parte de este ministerio para niñas y señoritas. Formamos carácter, fe y liderazgo en cada reunión en Iglesia Canaán.",
+        "btnConocerPrograma": "Conocer programa",
+        "btnWhatsapp": "WhatsApp"
+      }
     }
   }
 }

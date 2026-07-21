@@ -3,8 +3,10 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export function HeaderExplo() {
+  const t = useTranslations("app.nav");
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -45,7 +47,7 @@ export function HeaderExplo() {
           <Link
             href="/"
             className="shrink-0 w-16 sm:w-20 transition-transform duration-200 hover:scale-105"
-            title="Ir a la página principal"
+            title={t("irAPaginaPrincipal")}
           >
             <Image
               src="/assets/logo canaan.png"
@@ -60,56 +62,62 @@ export function HeaderExplo() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex gap-1 items-center ml-auto">
           <Link href="/" className={menuLinkClasses}>
-            Inicio
+            {t("inicio")}
           </Link>
 
           {/* Nuevas Generaciones Dropdown */}
           <div className="relative group">
-            <button className={menuLinkClasses}>Nuevas Generaciones</button>
+            <button className={menuLinkClasses}>
+              {t("nuevasGeneraciones")}
+            </button>
             <div className="absolute left-0 top-full pt-2 w-56 hidden group-hover:block">
               <div className="rounded-lg overflow-hidden bg-white shadow-[0_10px_30px_rgba(11,31,77,0.25)] ring-1 ring-[#0B1F4D]/10 border-t-2 border-[#2563EB]">
                 <Link
                   href="/explopage"
                   className="block px-4 py-2.5 text-sm text-[#0B1F4D] font-medium hover:bg-[#2563EB]/5 hover:text-[#2563EB] transition-colors"
                 >
-                  Exploradores del Rey
+                  {t("exploradoresDelRey")}
                 </Link>
                 <Link
                   href="/nuevas-generaciones/misioneritas"
                   className="block px-4 py-2.5 text-sm text-[#0B1F4D] font-medium hover:bg-[#2563EB]/5 hover:text-[#2563EB] transition-colors"
                 >
-                  Misioneritas
+                  {t("misioneritas")}
                 </Link>
                 <Link
                   href="/escuela-biblica"
                   className="block px-4 py-2.5 text-sm text-[#0B1F4D] font-medium hover:bg-[#2563EB]/5 hover:text-[#2563EB] transition-colors"
                 >
-                  Escuela Bíblica
+                  {t("escuelaBiblica")}
                 </Link>
                 <Link
                   href="/embajadores-de-cristo"
                   className="block px-4 py-2.5 text-sm text-[#0B1F4D] font-medium hover:bg-[#2563EB]/5 hover:text-[#2563EB] transition-colors"
                 >
-                  Embajadores de Cristo
+                  {t("embajadoresDeCristo")}
                 </Link>
               </div>
             </div>
           </div>
 
+          <Link href="/escuela-biblica" className={menuLinkClasses}>
+            {t("escuelaBiblica")}
+          </Link>
+
           <Link href="/fraternidad" className={menuLinkClasses}>
-            Fraternidad
+            {t("fraternidad")}
           </Link>
 
           <Link href="/concilio" className={menuLinkClasses}>
-            Concilio
+            {t("concilio")}
           </Link>
 
           <Link href="/misiones" className={menuLinkClasses}>
-            Misiones
+            {t("misiones")}
           </Link>
 
           <Link href="/media" className={menuLinkClasses}>
-            Media
+            {t("media")}
           </Link>
         </nav>
 
@@ -117,7 +125,7 @@ export function HeaderExplo() {
         <button
           onClick={toggleMenu}
           className={mobileButtonClasses}
-          aria-label="Toggle menu"
+          aria-label={t("toggleMenu")}
         >
           {isOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -130,7 +138,7 @@ export function HeaderExplo() {
           className={mobileLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          Inicio
+          {t("inicio")}
         </Link>
 
         {/* Mobile Nuevas Generaciones */}
@@ -139,7 +147,7 @@ export function HeaderExplo() {
             onClick={() => setIsOpen(isOpen)}
             className="w-full text-left px-5 py-2.5 text-sm text-[#0B1F4D] font-semibold transition hover:bg-[#0B1F4D]/5 active:scale-[0.98] active:bg-[#0B1F4D]/10"
           >
-            Nuevas Generaciones
+            {t("nuevasGeneraciones")}
           </button>
           <div className={mobileSubmenuBg}>
             <Link
@@ -147,38 +155,46 @@ export function HeaderExplo() {
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
-              Exploradores del Rey
+              {t("exploradoresDelRey")}
             </Link>
             <Link
               href="/nuevas-generaciones/misioneritas"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
-              Misioneritas
+              {t("misioneritas")}
             </Link>
             <Link
               href="/escuela-biblica"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
-              Escuela Bíblica
+              {t("escuelaBiblica")}
             </Link>
             <Link
               href="/embajadores-de-cristo"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
-              Embajadores de Cristo
+              {t("embajadoresDeCristo")}
             </Link>
           </div>
         </div>
+
+        <Link
+          href="/escuela-biblica"
+          className={mobileLinkClasses}
+          onClick={() => setIsOpen(false)}
+        >
+          {t("escuelaBiblica")}
+        </Link>
 
         <Link
           href="/fraternidad"
           className={mobileLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          Fraternidad
+          {t("fraternidad")}
         </Link>
 
         <Link
@@ -186,7 +202,7 @@ export function HeaderExplo() {
           className={mobileLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          Concilio
+          {t("concilio")}
         </Link>
 
         <Link
@@ -194,7 +210,7 @@ export function HeaderExplo() {
           className={mobileLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          Misiones
+          {t("misiones")}
         </Link>
 
         <Link
@@ -202,7 +218,7 @@ export function HeaderExplo() {
           className={mobileLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          Media
+          {t("media")}
         </Link>
       </nav>
     </div>

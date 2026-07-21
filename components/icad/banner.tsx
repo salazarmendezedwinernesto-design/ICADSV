@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export function Banner() {
-  const t = useTranslations("app.index");
+  const t = useTranslations("app.index.banner");
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Video de fondo */}
@@ -26,7 +26,7 @@ export function Banner() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4">
         {/* Texto superior */}
         <span className="mb-6 text-sm md:text-lg tracking-[8px] text-white uppercase">
-          Bienvenidos
+          {t("bienvenidos")}
         </span>
 
         {/* Logo principal */}

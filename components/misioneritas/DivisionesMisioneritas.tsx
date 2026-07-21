@@ -2,67 +2,56 @@
 
 import { Rainbow, Flower2, Heart, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import SafeComponent from "../icad/SafeComponent";
 
 const DIVISIONES = [
   {
-    nombre: "Arco Iris",
-    sub: "Párvulos",
+    key: "arcoIris",
     color: "#1FA24A",
     colorSoft: "#E7F7EC",
     Icon: Rainbow,
-    descripcion:
-      "Las más pequeñas del ministerio, dando sus primeros pasos en el conocimiento de Dios a través del juego y las historias bíblicas.",
   },
   {
-    nombre: "Margaritas",
-    sub: "Niñas más pequeñas",
+    key: "margaritas",
     color: "#F2B705",
     colorSoft: "#FFF8E1",
     Icon: Flower2,
-    descripcion:
-      "Niñas que empiezan a crecer en la fe, aprendiendo valores y hábitos cristianos de forma sencilla y alegre.",
   },
   {
-    nombre: "Rosas",
-    sub: "Pre-adolescentes",
+    key: "rosas",
     color: "#EC6FA2",
     colorSoft: "#FDF0F5",
     Icon: Heart,
-    descripcion:
-      "Encanto y pureza en una etapa de cambios: fortalecen su identidad y su relación personal con Cristo.",
   },
   {
-    nombre: "Estrellas",
-    sub: "Adolescentes",
+    key: "estrellas",
     color: "#12A9CE",
     colorSoft: "#E7F8FC",
     Icon: Star,
-    descripcion:
-      "Estrellas y Estrellas de Honor se preparan para el liderazgo, el servicio y el testimonio dentro de la iglesia.",
   },
-];
+] as const;
 
 export default function DivisionesMisioneritas() {
+  const t = useTranslations("app.misioneritas.divisiones");
   return (
     <SafeComponent>
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-white relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <span className="block text-center text-xs sm:text-sm font-bold tracking-[4px] uppercase text-[#0E7BA3] mb-3">
-            Un destacamento para cada edad
+            {t("kicker")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-4 text-[#0B1F4D]">
-            Divisiones
+            {t("titulo")}
           </h2>
           <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12 sm:mb-16">
-            Cada división tiene su propia banda de color, materiales y lema,
-            acompañando a cada niña según su etapa de crecimiento.
+            {t("parrafo")}
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {DIVISIONES.map((d, i) => (
               <motion.div
-                key={d.nombre}
+                key={d.key}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -89,13 +78,13 @@ export default function DivisionesMisioneritas() {
                     className="text-xl font-bold mb-1"
                     style={{ color: d.color }}
                   >
-                    {d.nombre}
+                    {t(`items.${d.key}.nombre`)}
                   </h3>
                   <p className="text-gray-500 text-xs sm:text-sm tracking-wide uppercase mb-3">
-                    {d.sub}
+                    {t(`items.${d.key}.sub`)}
                   </p>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    {d.descripcion}
+                    {t(`items.${d.key}.descripcion`)}
                   </p>
                 </div>
 
@@ -109,8 +98,7 @@ export default function DivisionesMisioneritas() {
           </div>
 
           <p className="text-center text-xs sm:text-sm text-gray-400 mt-10 italic">
-            Existen más departamentos dentro de Misioneritas; por el momento
-            trabajamos con estos cuatro.
+            {t("notaFinal")}
           </p>
         </div>
       </section>

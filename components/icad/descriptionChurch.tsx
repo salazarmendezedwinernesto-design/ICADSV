@@ -2,6 +2,7 @@
 
 import type { MouseEvent } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPinned } from "lucide-react";
@@ -9,35 +10,29 @@ import { MapPinned } from "lucide-react";
 interface ValuesChurch {
   id: string;
   icon: string;
-  title: string;
-  description: string;
+  key: "fe" | "comunidad" | "mision";
 }
 
 const valuesChurch: ValuesChurch[] = [
   {
     id: "value-1",
     icon: "/assets/icons/cross-solid-full.svg",
-    title: "Nuestra Fe",
-    description:
-      "Creemos en Jesucristo como nuestro Señor y Salvador y en la autoridad de la Biblia como la palabra de Dios.",
+    key: "fe",
   },
   {
     id: "value-2",
     icon: "/assets/icons/users-solid-full.svg",
-    title: "Nuestra Comunidad",
-    description:
-      "Somos una familia espiritual donde cada persona es bienvenida y puede crecer en su fe.",
+    key: "comunidad",
   },
   {
     id: "value-3",
     icon: "/assets/icons/earth-americas-solid-full.svg",
-    title: "Nuestra Misión",
-    description:
-      "Predicar el evangelio, discipular creyentes y servir a nuestra comunidad.",
+    key: "mision",
   },
 ];
 
 export default function DescriptionChurch() {
+  const t = useTranslations("app.index.descripcion");
   const handleVisitClick = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     const target = document.getElementById("seccion-mapa");
@@ -54,26 +49,13 @@ export default function DescriptionChurch() {
             {/* Bienvenida a la Iglesia */}
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-                Bienvenidos a Iglesia Canaán
+                {t("titulo")}
               </h2>
-              <p className="text-base sm:text-lg mb-6">
-                La Iglesia Canaán de las Asambleas de Dios es una comunidad
-                cristiana dedicada a compartir el mensaje del evangelio de
-                Jesucristo con amor, fe y compromiso.
-              </p>
-              <p className="text-base sm:text-lg mb-6">
-                Nuestro propósito es guiar a cada persona a tener una relación
-                personal con Dios, crecer espiritualmente y vivir conforme a los
-                principios de la palabra de Dios.
-              </p>
-              <p className="text-base sm:text-lg mb-6">
-                En nuestra iglesia creemos que cada persona tiene un propósito
-                especial en el plan de Dios. Por eso trabajamos en diferentes
-                ministerios para alcanzar a niños, jóvenes y adultos.
-              </p>
+              <p className="text-base sm:text-lg mb-6">{t("parrafo1")}</p>
+              <p className="text-base sm:text-lg mb-6">{t("parrafo2")}</p>
+              <p className="text-base sm:text-lg mb-6">{t("parrafo3")}</p>
               <p className="text-base mb-6 font-bold italic text-center">
-                &ldquo;Porque donde están dos o tres congregados en mi
-                nombre, allí estoy yo en medio de ellos.&rdquo; - Mateo 18:20
+                {t("cita")}
               </p>
               <div className="flex justify-center mt-6">
                 <Button
@@ -99,7 +81,7 @@ export default function DescriptionChurch() {
                     className="flex items-center justify-center"
                   >
                     <MapPinned className="w-5 h-5 mr-2" />
-                    VISITANOS
+                    {t("btnVisitanos")}
                   </a>
                 </Button>
               </div>
@@ -123,17 +105,17 @@ export default function DescriptionChurch() {
                 <CardHeader>
                   <Image
                     src={value.icon}
-                    alt={value.title}
+                    alt={t(`valores.${value.key}.titulo`)}
                     className="w-16 h-16 mx-auto"
                     width={64}
                     height={64}
                   />
                   <CardTitle className="text-lg font-bold">
-                    {value.title}
+                    {t(`valores.${value.key}.titulo`)}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>{value.description}</p>
+                  <p>{t(`valores.${value.key}.descripcion`)}</p>
                 </CardContent>
               </Card>
             ))}

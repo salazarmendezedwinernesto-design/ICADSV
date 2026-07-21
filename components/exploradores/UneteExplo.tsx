@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import SafeComponent from "../icad/SafeComponent";
 
 export default function UneteExplo() {
+  const t = useTranslations("app.explopage.uneteExplo");
   const fotos = [
     "/assets/ninos/Cuervos1.jpg",
     "/assets/ninos/cuervos2.jpg",
@@ -20,22 +22,19 @@ export default function UneteExplo() {
           {/* Lado izquierdo: Texto */}
           <div className="flex-1 space-y-6">
             <h2 className="text-5xl font-extrabold text-[#0B132B] uppercase tracking-tight leading-tight">
-              Únete a la <span className="text-[#D32F2F]">aventura</span>
+              {t("titulo")}{" "}
+              <span className="text-[#D32F2F]">{t("tituloResaltado")}</span>
             </h2>
-            <p className="text-gray-600 text-lg max-w-lg">
-              Forma parte de Exploradores del Rey. Desarrollamos carácter,
-              disciplina y propósito en cada lunes a las 6:00 PM en Iglesia
-              Canaán.
-            </p>
+            <p className="text-gray-600 text-lg max-w-lg">{t("parrafo")}</p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
                 href="#descripcion"
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#D32F2F] text-white font-bold uppercase tracking-wider hover:bg-[#0B132B] transition-all"
               >
-                Conocer programa
+                {t("btnConocerPrograma")}
               </a>
               <button className="px-8 py-4 border-2 border-[#0B132B] text-[#0B132B] font-bold uppercase tracking-wider hover:bg-[#0B132B] hover:text-white transition-all">
-                WhatsApp
+                {t("btnWhatsapp")}
               </button>
             </div>
           </div>

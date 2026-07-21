@@ -1,10 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 
-export function BannerMisioneritas() {
-  const t = useTranslations("app.misioneritas.banner");
+export function BannerEscuelaBiblica() {
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Video de fondo */}
@@ -26,22 +24,20 @@ export function BannerMisioneritas() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4">
         {/* Texto superior */}
         <span className="mb-6 text-sm md:text-lg tracking-[8px] text-white uppercase font-medium">
-          {t("bienvenidas")}
+          Bienvenidos
         </span>
 
-        {/* Logo principal: Misioneritas, centrado */}
-        <div className="relative">
-          <Image
-            src="/assets/ministries/Misioneritas.png"
-            alt={t("logoAlt")}
-            width={800}
-            height={800}
-            sizes="(max-width: 640px) 8rem, (max-width: 768px) 10rem, (max-width: 1024px) 12rem, 14rem"
-            className="relative h-auto w-28 sm:w-36 md:w-44 lg:w-52 xl:w-60 drop-shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
-          />
-        </div>
+        {/* Logo principal: Escuela Bíblica Dominical, centrado */}
+        <Image
+          src="/assets/ministries/escuela-biblica.png"
+          alt="Logo Escuela Bíblica Dominical"
+          width={800}
+          height={800}
+          sizes="(max-width: 640px) 10rem, (max-width: 768px) 13rem, (max-width: 1024px) 18rem, 20rem"
+          className="w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80 h-auto drop-shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+        />
 
-        {/* Botón estilo blanco */}
+        {/* Botón estilo Ultimex */}
         <a
           href="#descripcion"
           className="group relative mt-10 inline-flex items-center justify-center px-10 py-4 text-sm md:text-base uppercase tracking-[3px] text-white"
@@ -52,7 +48,7 @@ export function BannerMisioneritas() {
           {/* Esquina inferior derecha */}
           <span className="absolute -bottom-2 -right-2 w-6 h-6 border-r-2 border-b-2 border-white transition-all duration-300 group-hover:w-8 group-hover:h-8"></span>
 
-          <span className="relative z-10">{t("saberMas")}</span>
+          <span className="relative z-10">SABER MÁS</span>
         </a>
       </div>
     </section>

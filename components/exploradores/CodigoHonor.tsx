@@ -1,19 +1,21 @@
 "use client";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import SafeComponent from "../icad/SafeComponent";
 
-const CODIGO_EXPLORADORES = [
-  { t: "Alerta", d: "Mental, física y espiritualmente alerta." },
-  { t: "Limpio", d: "Limpio de cuerpo, de mente y de palabra." },
-  { t: "Honrado", d: "No miente, no engaña, ni roba." },
-  { t: "Valiente", d: "Valiente a pesar del peligro, críticas o amenazas." },
-  { t: "Leal", d: "Leal a la iglesia, familia, destacamento y amigos." },
-  { t: "Cortés", d: "Educado, amable y solícito en todo momento." },
-  { t: "Obediente", d: "Obedece a sus padres, líderes y superiores." },
-  { t: "Espiritual", d: "Ora, lee la Biblia y testifica su fe." },
-];
+const CODIGO_KEYS = [
+  "alerta",
+  "limpio",
+  "honrado",
+  "valiente",
+  "leal",
+  "cortes",
+  "obediente",
+  "espiritual",
+] as const;
 
 export default function CodigoHonor() {
+  const t = useTranslations("app.explopage.codigoHonor");
   return (
     <SafeComponent>
       <section className="py-24 px-8 bg-[#F9F7F2] relative overflow-hidden">
@@ -27,8 +29,8 @@ export default function CodigoHonor() {
               whileInView={{ opacity: 1, y: 0 }}
               className="text-4xl sm:text-5xl font-extrabold text-[#0B132B] uppercase tracking-tighter mb-6"
             >
-              Código de{" "}
-              <span className="text-[#D32F2F]">Exploradores del rey</span>
+              {t("titulo")}{" "}
+              <span className="text-[#D32F2F]">{t("tituloResaltado")}</span>
             </motion.h2>
             <motion.div
               initial={{ width: 0 }}
@@ -38,9 +40,9 @@ export default function CodigoHonor() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {CODIGO_EXPLORADORES.map((item, i) => (
+            {CODIGO_KEYS.map((key, i) => (
               <motion.div
-                key={item.t}
+                key={key}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
@@ -55,10 +57,10 @@ export default function CodigoHonor() {
 
                 <div className="mt-4">
                   <h3 className="text-[#0B132B] text-xl font-bold mb-3 uppercase group-hover:text-[#D32F2F] transition-colors">
-                    {item.t}
+                    {t(`items.${key}.titulo`)}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    {item.d}
+                    {t(`items.${key}.descripcion`)}
                   </p>
                 </div>
 

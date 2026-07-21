@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import {
   Card,
   CardContent,
@@ -221,7 +222,16 @@ export default function services() {
     "Sábado",
   ];
 
-  const todayDay = getTodayDay();
+  // El día/hora "por defecto" (SSR) es fijo para que servidor y cliente
+  // coincidan en el primer render. Una vez montado en el cliente, se
+  // recalcula con la hora real del navegador.
+  const [todayDay, setTodayDay] = useState("sunday");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setTodayDay(getTodayDay());
+    setMounted(true);
+  }, []);
 
   return (
     <div className="relative max-w-6xl py-8 sm:py-12 md:py-16 px-4 sm:px-5 md:px-6 mx-auto">
@@ -236,6 +246,7 @@ export default function services() {
 
       <div className="w-full">
         <Tabs
+          key={todayDay}
           defaultValue={todayDay}
           className="w-full flex flex-col items-center justify-center"
         >
@@ -284,10 +295,12 @@ export default function services() {
             </TabsTrigger>
           </TabsList>
           {servicesData.map((service) => {
-            const { message, style } = getStatusDisplay(
-              service.dayOfWeek,
-              service.hour,
-            );
+            const { message, style } = mounted
+              ? getStatusDisplay(service.dayOfWeek, service.hour)
+              : {
+                  message: "Cargando horario...",
+                  style: "text-muted-foreground",
+                };
 
             return (
               <TabsContent

@@ -1,4 +1,7 @@
+import { useTranslations } from "next-intl";
+
 export default function Loading() {
+  const t = useTranslations("app.loading");
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-950/40 backdrop-blur-xl animate-fade-in">
       {/* Efecto de brillo de fondo (Glow) opcional para dar profundidad */}
@@ -26,10 +29,10 @@ export default function Loading() {
       {/* Bloque de Texto Inferior */}
       <div className="mt-6 flex flex-col items-center gap-1.5 z-10">
         <span className="text-xs font-semibold tracking-[0.2em] text-blue-400 uppercase">
-          BIENVENIDO
+          {t("bienvenido")}
         </span>
         <span className="text-[11px] font-medium text-slate-500 tracking-normal animate-pulse">
-          Por favor, espera un momento...
+          {t("porFavorEspera")}
         </span>
       </div>
     </div>

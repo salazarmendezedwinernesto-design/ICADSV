@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function HeroExploradores() {
+  const t = useTranslations("app.explopage.hero");
   return (
     <section
       id="descripcion"
@@ -10,20 +12,17 @@ export default function HeroExploradores() {
         {/* Texto */}
         <div>
           <span className="inline-block text-xs sm:text-sm font-bold tracking-[4px] uppercase text-[#C8102E] mb-3">
-            Ministerio de Nuevas Generaciones
+            {t("kicker")}
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#0B1F4D] leading-tight">
-            Exploradores <span className="text-[#C8102E]">del Rey</span>
+            {t("titulo")}{" "}
+            <span className="text-[#C8102E]">{t("tituloResaltado")}</span>
           </h2>
           <p className="text-base sm:text-lg leading-relaxed mb-4 text-gray-700">
-            Ministerio internacional de las Asambleas de Dios, dedicado a
-            evangelizar, equipar y empoderar a las nuevas generación de niños y
-            niñas.
+            {t("parrafo1")}
           </p>
           <p className="text-base sm:text-lg leading-relaxed text-gray-700">
-            Formamos el carácter mediante disciplina, responsabilidad y valores
-            bíblicos desde 1962, acompañando a cada niño y joven en su camino de
-            fe.
+            {t("parrafo2")}
           </p>
 
           <div className="mt-6 flex items-start gap-3 rounded-xl bg-[#0B1F4D]/5 border border-[#0B1F4D]/10 px-5 py-4">
@@ -31,8 +30,7 @@ export default function HeroExploradores() {
               &ldquo;
             </span>
             <p className="text-sm sm:text-base text-[#0B1F4D] italic leading-relaxed">
-              ¡Preparado para todo! Preparado para trabajar, jugar, servir,
-              adorar, vivir y obedecer a la palabra de Dios.
+              {t("cita")}
             </p>
           </div>
 
@@ -40,19 +38,19 @@ export default function HeroExploradores() {
             <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#0B1F4D]/5 border border-[#0B1F4D]/15">
               <span className="w-2.5 h-2.5 rounded-full bg-[#1E3A8A]" />
               <span className="text-sm font-semibold text-[#0B1F4D]">
-                Desde 1962
+                {t("badgeDesde1962")}
               </span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#C8102E]/5 border border-[#C8102E]/15">
               <span className="w-2.5 h-2.5 rounded-full bg-[#C8102E]" />
               <span className="text-sm font-semibold text-[#0B1F4D]">
-                Asambleas de Dios
+                {t("badgeAsambleasDeDios")}
               </span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#F2B705]/10 border border-[#F2B705]/30">
               <span className="w-2.5 h-2.5 rounded-full bg-[#F2B705]" />
               <span className="text-sm font-semibold text-[#0B1F4D]">
-                Lunes, 6:00 PM
+                {t("badgeHorario")}
               </span>
             </div>
           </div>
@@ -64,14 +62,14 @@ export default function HeroExploradores() {
           <div className="relative rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
             <Image
               src="/assets/cuervos3.jpg"
-              alt="Niños y líderes de Exploradores del Rey en un culto de Nuevas Generaciones"
+              alt={t("fotoAlt")}
               width={900}
               height={700}
               className="w-full h-70 sm:h-90 md:h-105 object-cover"
             />
             <div className="absolute bottom-0 inset-x-0 bg-linear-to-t from-[#0B1F4D]/80 to-transparent px-5 py-4">
               <p className="text-white text-sm sm:text-base font-medium">
-                Culto de Nuevas Generaciones
+                {t("fotoCaption")}
               </p>
             </div>
           </div>

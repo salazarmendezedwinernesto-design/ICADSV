@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import SafeComponent from "../icad/SafeComponent";
 
 export default function UneteMisioneritas() {
+  const t = useTranslations("app.misioneritas.unete");
   const fotos = [
     "/assets/ninos/misioneritas1.jpg",
     "/assets/ninos/misioneritas 3.jpeg",
@@ -21,21 +23,19 @@ export default function UneteMisioneritas() {
           {/* Lado izquierdo: Texto */}
           <div className="flex-1 space-y-6">
             <h2 className="text-5xl font-extrabold text-[#0B1F4D] uppercase tracking-tight leading-tight">
-              Únete a <span className="text-[#0E9BC7]">Misioneritas</span>
+              {t("titulo")}{" "}
+              <span className="text-[#0E9BC7]">{t("tituloResaltado")}</span>
             </h2>
-            <p className="text-gray-600 text-lg max-w-lg">
-              Forma parte de este ministerio para niñas y señoritas. Formamos
-              carácter, fe y liderazgo en cada reunión en Iglesia Canaán.
-            </p>
+            <p className="text-gray-600 text-lg max-w-lg">{t("parrafo")}</p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
                 href="#descripcion"
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#0E9BC7] text-white font-bold uppercase tracking-wider hover:bg-[#0B1F4D] transition-all"
               >
-                Conocer programa
+                {t("btnConocerPrograma")}
               </a>
               <button className="px-8 py-4 border-2 border-[#0B1F4D] text-[#0B1F4D] font-bold uppercase tracking-wider hover:bg-[#0B1F4D] hover:text-white transition-all">
-                WhatsApp
+                {t("btnWhatsapp")}
               </button>
             </div>
           </div>

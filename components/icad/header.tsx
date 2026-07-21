@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 export function Header() {
+  const t = useTranslations("app.nav");
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -53,54 +55,60 @@ export function Header() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex gap-1 items-center ml-auto">
           <Link href="/" className={menuLinkClasses}>
-            Inicio
+            {t("inicio")}
           </Link>
 
           {/* Nuevas Generaciones Dropdown */}
           <div className="relative group">
-            <button className={menuLinkClasses}>Nuevas Generaciones</button>
+            <button className={menuLinkClasses}>
+              {t("nuevasGeneraciones")}
+            </button>
             <div className="absolute left-0 mt-0 w-48 bg-black/80 rounded hidden group-hover:block">
               <Link
                 href="/explopage"
                 className="block px-4 py-2 text-sm text-white hover:bg-white/10"
               >
-                Exploradores del Rey
+                {t("exploradoresDelRey")}
               </Link>
               <Link
                 href="/nuevas-generaciones/misioneritas"
                 className="block px-4 py-2 text-sm text-white hover:bg-white/10"
               >
-                Misioneritas
+                {t("misioneritas")}
               </Link>
               <Link
                 href="/escuela-biblica"
                 className="block px-4 py-2 text-sm text-white hover:bg-white/10"
               >
-                Escuela Bíblica
+                {t("escuelaBiblica")}
               </Link>
               <Link
                 href="/embajadores-de-cristo"
                 className="block px-4 py-2 text-sm text-white hover:bg-white/10"
               >
-                Embajadores de Cristo
+                {t("embajadoresDeCristo")}
               </Link>
             </div>
           </div>
 
+          <Link href="/escuela-biblica" className={menuLinkClasses}>
+            {t("escuelaBiblica")}
+          </Link>
+
           <Link href="/fraternidad" className={menuLinkClasses}>
-            Fraternidad
+            {t("fraternidad")}
           </Link>
 
           <Link href="/concilio" className={menuLinkClasses}>
-            Concilio
+            {t("concilio")}
           </Link>
 
           <Link href="/misiones" className={menuLinkClasses}>
-            Misiones
+            {t("misiones")}
           </Link>
 
           <Link href="/media" className={menuLinkClasses}>
-            Media
+            {t("media")}
           </Link>
         </nav>
 
@@ -108,7 +116,7 @@ export function Header() {
         <button
           onClick={toggleMenu}
           className={mobileButtonClasses}
-          aria-label="Toggle menu"
+          aria-label={t("toggleMenu")}
         >
           {isOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
@@ -121,7 +129,7 @@ export function Header() {
           className={mobileLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          Inicio
+          {t("inicio")}
         </Link>
 
         {/* Mobile Nuevas Generaciones */}
@@ -130,7 +138,7 @@ export function Header() {
             onClick={() => setIsOpen(isOpen)}
             className="w-full text-left px-4 py-2 text-sm text-black font-medium transition hover:bg-black/5 active:scale-95 active:bg-black/10"
           >
-            Nuevas Generaciones
+            {t("nuevasGeneraciones")}
           </button>
           <div className={mobileSubmenuBg}>
             <Link
@@ -138,38 +146,46 @@ export function Header() {
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
-              Exploradores del Rey
+              {t("exploradoresDelRey")}
             </Link>
             <Link
               href="/nuevas-generaciones/misioneritas"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
-              Misioneritas
+              {t("misioneritas")}
             </Link>
             <Link
               href="/escuela-biblica"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
-              Escuela Bíblica
+              {t("escuelaBiblica")}
             </Link>
             <Link
               href="/embajadores-de-cristo"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
-              Embajadores de Cristo
+              {t("embajadoresDeCristo")}
             </Link>
           </div>
         </div>
+
+        <Link
+          href="/escuela-biblica"
+          className={mobileLinkClasses}
+          onClick={() => setIsOpen(false)}
+        >
+          {t("escuelaBiblica")}
+        </Link>
 
         <Link
           href="/fraternidad"
           className={mobileLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          Fraternidad
+          {t("fraternidad")}
         </Link>
 
         <Link
@@ -177,7 +193,7 @@ export function Header() {
           className={mobileLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          Concilio
+          {t("concilio")}
         </Link>
 
         <Link
@@ -185,7 +201,7 @@ export function Header() {
           className={mobileLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          Misiones
+          {t("misiones")}
         </Link>
 
         <Link
@@ -193,7 +209,7 @@ export function Header() {
           className={mobileLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          MEDIA
+          {t("media")}
         </Link>
       </nav>
     </div>

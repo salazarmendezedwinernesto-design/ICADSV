@@ -2,16 +2,347 @@
   "app": {
     "metadata": {
       "title": "ICAD",
-      "description": "Iglesia Canaán de las Asambleas de Dios"
+      "description": "Canaan Assemblies of God Church"
+    },
+    "loading": {
+      "bienvenido": "WELCOME",
+      "porFavorEspera": "Please wait a moment..."
+    },
+    "nav": {
+      "inicio": "Home",
+      "nuevasGeneraciones": "New Generations",
+      "exploradoresDelRey": "Explorers of the King",
+      "misioneritas": "Little Missionaries",
+      "escuelaBiblica": "Bible School",
+      "embajadoresDeCristo": "Ambassadors of Christ",
+      "fraternidad": "Brotherhood",
+      "concilio": "Council",
+      "misiones": "Missions",
+      "media": "Media",
+      "irAPaginaPrincipal": "Go to the home page",
+      "toggleMenu": "Toggle menu"
+    },
+    "footer": {
+      "descripcion": "You can reach us through social media, WhatsApp, or by visiting us at our location.",
+      "direccion": "1a Calle Oriente, Barrio El Centro El Refugio, Ahuachapán Norte",
+      "correo": "iglesiacanaanelrefugio@gmail.com",
+      "telefono": "+503 2407 2518",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "whatsapp": "WhatsApp",
+      "tituloNuevasGeneraciones": "New Generations",
+      "tituloMinisterios": "Ministries",
+      "linkExploradoresDelRey": "Explorers of the King",
+      "linkMisioneritas": "Little Missionaries",
+      "linkEscuelaBiblica": "Bible School",
+      "linkEmbajadoresDeCristo": "Ambassadors of Christ",
+      "linkFraternidad": "Brotherhood",
+      "linkConcilio": "Council",
+      "linkMisiones": "Missions",
+      "linkMedia": "Media",
+      "derechosReservados": "© {year} ICAD.",
+      "todosLosDerechosReservados": "All rights reserved.",
+      "desarrolladoPor": "Developed by",
+      "desarrollador": "Edwin Salazar"
     },
     "index": {
       "btnVerMas": "more",
-      "bienvenidaPrincipal": "Bienvenida",
-      "parrafoBienvenida1": "parrafo 1",
-      "ubicacion": "ubicacion"
+      "bienvenidaPrincipal": "Welcome",
+      "banner": {
+        "bienvenidos": "Welcome",
+        "btnVerMas": "See more"
+      },
+      "descripcion": {
+        "titulo": "Welcome to Canaan Church",
+        "parrafo1": "Canaan Assemblies of God Church is a Christian community dedicated to sharing the gospel message of Jesus Christ with love, faith and commitment.",
+        "parrafo2": "Our purpose is to guide every person to have a personal relationship with God, grow spiritually and live according to the principles of the word of God.",
+        "parrafo3": "In our church we believe that every person has a special purpose in God's plan. That's why we work through different ministries to reach children, youth and adults.",
+        "cita": "\"For where two or three are gathered together in my name, there am I in the midst of them.\" - Matthew 18:20",
+        "btnVisitanos": "VISIT US",
+        "valores": {
+          "fe": {
+            "titulo": "Our Faith",
+            "descripcion": "We believe in Jesus Christ as our Lord and Savior and in the authority of the Bible as the word of God."
+          },
+          "comunidad": {
+            "titulo": "Our Community",
+            "descripcion": "We are a spiritual family where every person is welcome and can grow in their faith."
+          },
+          "mision": {
+            "titulo": "Our Mission",
+            "descripcion": "To preach the gospel, disciple believers and serve our community."
+          }
+        }
+      },
+      "servicios": {
+        "titulo": "Services",
+        "subtitulo": "You can join us for all of our services.",
+        "dias": {
+          "domingo": "Sunday",
+          "lunes": "Monday",
+          "martes": "Tuesday",
+          "miercoles": "Wednesday",
+          "jueves": "Thursday",
+          "viernes": "Friday",
+          "sabado": "Saturday"
+        },
+        "eventos": {
+          "lunes": "New Generations, Joint Service of Little Missionaries and Explorers",
+          "martes": "Women's Missionary Council 'CMF'",
+          "miercoles": "Prayer and intercession at the church and live broadcast on Facebook of Connected with God",
+          "jueves": "Men's Brotherhood 'FV'",
+          "viernes": "Bible School and CCDL Teaching",
+          "sabado": "Youth Service 'EDC'",
+          "domingo": "General Service"
+        },
+        "estado": {
+          "ahora": "Now!",
+          "faltaHora": "{hours} hour left",
+          "faltaHoras": "{hours} hours left",
+          "faltanDia": "{days} day left",
+          "faltanDias": "{days} days left",
+          "faltanDiaYHora": "{days} day and {hours} hour left",
+          "faltanDiaYHoras": "{days} day and {hours} hours left",
+          "faltanDiasYHora": "{days} days and {hours} hour left",
+          "faltanDiasYHoras": "{days} days and {hours} hours left",
+          "transmitiendoEnVivo": "🔴 Live now",
+          "cultoFinalizado": "Service ended"
+        }
+      },
+      "ministerios": {
+        "titulo": "Our Ministries",
+        "lista": {
+          "exploradoresDelRey": "Explorers of the King",
+          "misioneritas": "Little Missionaries",
+          "escuelaBiblica": "Bible School",
+          "fraternidadDeVarones": "Men's Brotherhood",
+          "concilioMisioneroFemenil": "Women's Missionary Council",
+          "misiones": "Missions",
+          "embajadoresDeCristo": "Ambassadors of Christ"
+        }
+      },
+      "ubicacion": {
+        "titulo": "Our Location",
+        "descripcion": "We are located at 1a Calle Oriente, Barrio El Centro El Refugio, Ahuachapán Norte. We look forward to worshiping together. You can visit us at the address shown below.",
+        "tituloMapa": "Canaan Church Location"
+      }
+    },
+    "explopage": {
+      "banner": {
+        "bienvenidos": "Welcome",
+        "saberMas": "LEARN MORE"
+      },
+      "hero": {
+        "kicker": "New Generations Ministry",
+        "titulo": "Explorers",
+        "tituloResaltado": "of the King",
+        "parrafo1": "An international Assemblies of God ministry dedicated to evangelizing, equipping and empowering the new generation of boys and girls.",
+        "parrafo2": "We build character through discipline, responsibility and biblical values since 1962, walking alongside every child and young person on their journey of faith.",
+        "cita": "Ready for anything! Ready to work, play, serve, worship, live and obey the word of God.",
+        "badgeDesde1962": "Since 1962",
+        "badgeAsambleasDeDios": "Assemblies of God",
+        "badgeHorario": "Mondays, 6:00 PM",
+        "fotoAlt": "Children and leaders of Explorers of the King at a New Generations service",
+        "fotoCaption": "New Generations Service"
+      },
+      "codigoHonor": {
+        "titulo": "Code of",
+        "tituloResaltado": "Explorers of the King",
+        "items": {
+          "alerta": {
+            "titulo": "Alert",
+            "descripcion": "Mentally, physically and spiritually alert."
+          },
+          "limpio": {
+            "titulo": "Clean",
+            "descripcion": "Clean in body, mind and speech."
+          },
+          "honrado": {
+            "titulo": "Honest",
+            "descripcion": "Does not lie, cheat, or steal."
+          },
+          "valiente": {
+            "titulo": "Brave",
+            "descripcion": "Brave despite danger, criticism or threats."
+          },
+          "leal": {
+            "titulo": "Loyal",
+            "descripcion": "Loyal to the church, family, troop and friends."
+          },
+          "cortes": {
+            "titulo": "Courteous",
+            "descripcion": "Polite, kind and helpful at all times."
+          },
+          "obediente": {
+            "titulo": "Obedient",
+            "descripcion": "Obeys parents, leaders and superiors."
+          },
+          "espiritual": {
+            "titulo": "Spiritual",
+            "descripcion": "Prays, reads the Bible and shares their faith."
+          }
+        }
+      },
+      "significadoEmblema": {
+        "kicker": "Meaning of the Emblem",
+        "titulo": "A compass that points to Christ",
+        "parrafo": "The design is based on the cardinal points, to remind us to always direct our attention to Jesus.",
+        "fotoAlt": "Compass of the Explorers of the King emblem",
+        "puntos": {
+          "dorados": {
+            "titulo": "4 golden points",
+            "texto": "They represent the four aspects of a young person's growth: physical, spiritual, mental and social."
+          },
+          "rojos": {
+            "titulo": "4 red points",
+            "texto": "They represent the four main teachings of the Church: Salvation, Baptism in the Holy Spirit, Divine Healing and the Second Coming."
+          },
+          "azules": {
+            "titulo": "8 blue points",
+            "texto": "They represent the Code of Explorers of the King: alert, clean, honest, brave, loyal, courteous, obedient and spiritual."
+          }
+        }
+      },
+      "programaEdades": {
+        "kicker": "A department for every age",
+        "titulo": "Age-Based Program",
+        "grupos": {
+          "navegantes": {
+            "nombre": "Navigators",
+            "edad": "5 to 7 years old",
+            "descripcion": "A weekly program with a deep effect on the youngest ones: they are the foundation, navigators at their best."
+          },
+          "pioneros": {
+            "nombre": "Pioneers",
+            "edad": "8 to 10 years old",
+            "descripcion": "They begin to take interest in outdoor activities: hiking, camping and exploration."
+          },
+          "seguidoresDeLaSenda": {
+            "nombre": "Path Followers",
+            "edad": "11 to 13 years old",
+            "descripcion": "We walk alongside them through a stage of many changes with evangelism, teaching and recreation."
+          },
+          "exploradores": {
+            "nombre": "Explorers",
+            "edad": "14 to 17 years old",
+            "descripcion": "Personal growth and leadership through action challenges, Christian service and outdoor life."
+          },
+          "senoritas": {
+            "nombre": "Young Ladies",
+            "edad": "5 to 17 years old",
+            "descripcion": "Girls and young women take part with the same opportunities and rights, according to their age."
+          }
+        }
+      },
+      "uneteExplo": {
+        "titulo": "Join the",
+        "tituloResaltado": "adventure",
+        "parrafo": "Become part of Explorers of the King. We build character, discipline and purpose every Monday at 6:00 PM at Canaan Church.",
+        "btnConocerPrograma": "Learn about the program",
+        "btnWhatsapp": "WhatsApp"
+      }
     },
     "misioneritas": {
-      "titulo": "title"
+      "titulo": "title",
+      "banner": {
+        "bienvenidas": "Welcome",
+        "saberMas": "LEARN MORE"
+      },
+      "hero": {
+        "kicker": "New Generations Ministry",
+        "titulo": "What is",
+        "tituloResaltado": "Little Missionaries",
+        "parrafo1": "Little Missionaries is a Christian Assemblies of God ministry that seeks to form and disciple girls and young women in the Word of God.",
+        "parrafo2": "Its purpose is to guide them toward well-rounded growth — spiritual, physical, mental and social — so they become witnesses of Christ and leaders in their churches.",
+        "objetivosTitulo": "Goals",
+        "objetivos": {
+          "ganar": "Win girls and young women for Christ.",
+          "ensenar": "Teach the Bible and build solid foundations of faith.",
+          "promover": "Promote values such as kindness, service, love and testimony.",
+          "preparar": "Prepare them to serve in missions and Christian leadership."
+        },
+        "fotoAlt": "Girls and leaders of Little Missionaries at a church activity",
+        "fotoCaption": "Little Missionaries Activity"
+      },
+      "divisiones": {
+        "kicker": "A troop for every age",
+        "titulo": "Divisions",
+        "parrafo": "Each division has its own color band, materials and motto, walking alongside each girl according to her stage of growth.",
+        "items": {
+          "arcoIris": {
+            "nombre": "Rainbow",
+            "sub": "Toddlers",
+            "descripcion": "The youngest members of the ministry, taking their first steps in knowing God through play and Bible stories."
+          },
+          "margaritas": {
+            "nombre": "Daisies",
+            "sub": "Younger girls",
+            "descripcion": "Girls who are beginning to grow in faith, learning Christian values and habits in a simple and joyful way."
+          },
+          "rosas": {
+            "nombre": "Roses",
+            "sub": "Pre-teens",
+            "descripcion": "Charm and purity in a stage of change: strengthening their identity and personal relationship with Christ."
+          },
+          "estrellas": {
+            "nombre": "Stars",
+            "sub": "Teens",
+            "descripcion": "Stars and Honor Stars prepare for leadership, service and testimony within the church."
+          }
+        },
+        "notaFinal": "There are more departments within Little Missionaries; for now we work with these four."
+      },
+      "promesas": {
+        "kicker": "Commitment and character",
+        "titulo": "Our Pledges",
+        "items": {
+          "banderaCristiana": {
+            "titulo": "Pledge to the Christian Flag",
+            "texto": "I pledge allegiance to the Christian flag and to the Savior for whose kingdom it stands: one brotherhood uniting all true believers in service and in love."
+          },
+          "banderaMisioneritas": {
+            "titulo": "Pledge to the Little Missionaries Flag",
+            "texto": "I pledge allegiance to the Little Missionaries flag, and with God's help I will do everything I can to hold high the ideals of Little Missionaries, to be a faithful steward of my time, talent and money, to exercise my ministry on behalf of others, to abide in Him through prayer and Bible study, and to bear witness as a little missionary."
+          },
+          "biblia": {
+            "titulo": "Pledge to the Bible",
+            "texto": "I pledge allegiance to the Bible, God's Holy Word. I will make it a lamp unto my feet and a light unto my path, and treasure its words in my heart, so that I may not sin against God."
+          }
+        }
+      },
+      "codigoLema": {
+        "kicker": "Code and Motto",
+        "titulo": "Philippians 4:8",
+        "cita": "\"Whatever is true, whatever is honest, whatever is just, whatever is pure, whatever is lovely, whatever is of good report; if there be any virtue, and if there be any praise, think on these things.\"",
+        "lemaGeneralLabel": "General Motto",
+        "lemaGeneral": "\"Because we care, we serve.\""
+      },
+      "impacto": {
+        "kicker": "Its Impact",
+        "titulo": "A history of service",
+        "hitos": {
+          "fundacion": {
+            "anio": "1956",
+            "texto": "Founded in the United States."
+          },
+          "expansion": {
+            "anio": "60s",
+            "texto": "Expanded across Latin America."
+          },
+          "hoy": {
+            "anio": "Today",
+            "texto": "Thousands of groups and leaders across several countries, becoming a fundamental ministry in churches."
+          }
+        }
+      },
+      "unete": {
+        "titulo": "Join",
+        "tituloResaltado": "Little Missionaries",
+        "parrafo": "Become part of this ministry for girls and young women. We build character, faith and leadership at every gathering at Canaan Church.",
+        "btnConocerPrograma": "Learn about the program",
+        "btnWhatsapp": "WhatsApp"
+      }
     }
   }
 }

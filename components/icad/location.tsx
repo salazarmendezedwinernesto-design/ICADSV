@@ -1,6 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function Location() {
+  const t = useTranslations("app.index.ubicacion");
   return (
     <div className="bg-white">
       <div className="relative max-w-6xl py-12 sm:py-20 md:py-28 px-4 sm:px-5 mx-auto">
@@ -8,12 +11,10 @@ export default function Location() {
           {/* Título */}
           <div className="mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center md:text-left">
-              Nuestra Ubicación
+              {t("titulo")}
             </h2>
             <p className="text-base sm:text-lg text-gray-600 text-center md:text-left">
-              Nos encontramos en 1a Calle oriente, Barrio El Centro El Refugio,
-              Ahuachapán Norte. Te esperamos para adorar juntos. Puedes
-              visitarnos en la dirección que se muestra a continuación.
+              {t("descripcion")}
             </p>
           </div>
 
@@ -39,7 +40,7 @@ export default function Location() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación Iglesia Canaán"
+                title={t("tituloMapa")}
               ></iframe>
             </div>
           </div>
