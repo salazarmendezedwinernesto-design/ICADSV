@@ -36,7 +36,7 @@ const ministerios: Ministerio[] = [
     id: "ministerio-3",
     key: "escuelaBiblica",
     icono: "/assets/ministries/escuela-biblica.png",
-    enlace: "/nuevas-generaciones/escuela-biblica",
+    enlace: "/escuelaBiblica",
   },
   {
     id: "ministerio-4",
@@ -60,7 +60,7 @@ const ministerios: Ministerio[] = [
     id: "ministerio-7",
     key: "embajadoresDeCristo",
     icono: "/assets/ministries/edc.jpg",
-    enlace: "/nuevas-generaciones/embajadores-de-cristo",
+    enlace: "/EDC",
   },
 ];
 

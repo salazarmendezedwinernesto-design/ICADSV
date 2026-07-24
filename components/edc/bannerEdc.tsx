@@ -3,9 +3,8 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-export function BannerEscuelaBiblica() {
-  const t = useTranslations("app.escuelaBiblica.banner");
-
+export function BannerEdc() {
+  const t = useTranslations("app.edc.banner");
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Video de fondo */}
@@ -27,22 +26,23 @@ export function BannerEscuelaBiblica() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4">
         {/* Texto superior */}
         <span className="mb-6 text-sm md:text-lg tracking-[8px] text-white uppercase font-medium">
-          {t("bienvenidos")}
+          {t("kicker")}
         </span>
 
-        {/* Logo principal: Escuela Bíblica Dominical, centrado */}
+        {/* Logo principal: Embajadores de Cristo, centrado */}
         <Image
-          src="/assets/ministries/escuela-biblica.png"
-          alt="Logo Escuela Bíblica Dominical"
-          width={800}
-          height={800}
-          sizes="(max-width: 640px) 10rem, (max-width: 768px) 13rem, (max-width: 1024px) 18rem, 20rem"
-          className="w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80 h-auto drop-shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+          src="/assets/ministries/edc.png"
+          alt="Logo Iglesia Canaán"
+          width={600}
+          height={600}
+          sizes="(max-width: 600px) 8rem, (max-width: 768px) 12rem, (max-width: 1024px) 14rem, 16rem"
+          preload
+          className="w-32 sm:w-40 md:w-44 lg:w-52 xl:w-60 h-auto"
         />
 
         {/* Botón estilo Ultimex */}
         <a
-          href="#descripcion"
+          href="#quienes-somos"
           className="group relative mt-10 inline-flex items-center justify-center px-10 py-4 text-sm md:text-base uppercase tracking-[3px] text-white"
         >
           {/* Esquina superior izquierda */}

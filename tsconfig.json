@@ -29,7 +29,8 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "components/icad/bannerExplotsx"
+    "components/icad/bannerExplotsx",
+    "app/[locale]/escuelaBiblica/pages tsx"
   ],
   "exclude": ["node_modules"]
 }

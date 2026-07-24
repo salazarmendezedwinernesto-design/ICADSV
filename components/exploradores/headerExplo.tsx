@@ -85,13 +85,13 @@ export function HeaderExplo() {
                   {t("misioneritas")}
                 </Link>
                 <Link
-                  href="/escuela-biblica"
+                  href="/escuelaBiblica"
                   className="block px-4 py-2.5 text-sm text-[#0B1F4D] font-medium hover:bg-[#2563EB]/5 hover:text-[#2563EB] transition-colors"
                 >
                   {t("escuelaBiblica")}
                 </Link>
                 <Link
-                  href="/embajadores-de-cristo"
+                  href="/EDC"
                   className="block px-4 py-2.5 text-sm text-[#0B1F4D] font-medium hover:bg-[#2563EB]/5 hover:text-[#2563EB] transition-colors"
                 >
                   {t("embajadoresDeCristo")}
@@ -99,10 +99,6 @@ export function HeaderExplo() {
               </div>
             </div>
           </div>
-
-          <Link href="/escuela-biblica" className={menuLinkClasses}>
-            {t("escuelaBiblica")}
-          </Link>
 
           <Link href="/fraternidad" className={menuLinkClasses}>
             {t("fraternidad")}
@@ -165,14 +161,14 @@ export function HeaderExplo() {
               {t("misioneritas")}
             </Link>
             <Link
-              href="/escuela-biblica"
+              href="/escuelaBiblica"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
               {t("escuelaBiblica")}
             </Link>
             <Link
-              href="/embajadores-de-cristo"
+              href="/EDC"
               className={mobileSubLinkClasses}
               onClick={() => setIsOpen(false)}
             >
@@ -180,14 +176,6 @@ export function HeaderExplo() {
             </Link>
           </div>
         </div>
-
-        <Link
-          href="/escuela-biblica"
-          className={mobileLinkClasses}
-          onClick={() => setIsOpen(false)}
-        >
-          {t("escuelaBiblica")}
-        </Link>
 
         <Link
           href="/fraternidad"

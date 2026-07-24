@@ -117,7 +117,7 @@ export function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/nuevas-generaciones/embajadores-de-cristo"
+                    href="/EDC"
                     className="text-base md:text-lg text-gray-400 hover:text-blue-400 transition-colors"
                   >
                     {t("linkEmbajadoresDeCristo")}

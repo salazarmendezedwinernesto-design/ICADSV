@@ -343,6 +343,150 @@
         "btnConocerPrograma": "Conocer programa",
         "btnWhatsapp": "WhatsApp"
       }
+    },
+    "edc": {
+      "banner": {
+        "kicker": "JÓVENES ICAD",
+        "titulo": "Somos la juventud de Iglesia Canaán El Refugio, una generación apasionada por Cristo.",
+        "saberMas": "Conocer más",
+        "logoAlt": "Logo del ministerio Embajadores de Cristo (EDC)"
+      },
+      "quienesSomos": {
+        "kicker": "¿Quiénes Somos?",
+        "titulo": "Embajadores de",
+        "tituloResaltado": "Cristo",
+        "parrafo1": "Los Embajadores de Cristo (EDC) son el ministerio juvenil de las Asambleas de Dios, dedicado a formar una generación apasionada por Jesús, firme en la fe y comprometida con servir a Dios y a su comunidad.",
+        "parrafo2": "En Jóvenes ICAD, brindamos un espacio donde adolescentes y jóvenes fortalecen su relación con Dios, desarrollan su liderazgo y descubren los dones que Él les ha dado. A través de cultos juveniles, estudios bíblicos, campamentos y actividades de compañerismo, promovemos el crecimiento espiritual y una vida centrada en Cristo.",
+        "parrafo3": "Como parte de su formación, nuestros jóvenes también participan en el Centro de Capacitación para Discípulos y Líderes (CCDL), cursando los módulos 1, 2 y 3 para fortalecer su conocimiento de la Palabra de Dios y prepararse para servir con excelencia.",
+        "btnConocerMas": "Conocer más",
+        "fotoAlt": "Jóvenes de Embajadores de Cristo en una actividad de la iglesia",
+        "fotoCaption": "Jóvenes ICAD en un culto juvenil"
+      },
+      "actividades": {
+        "kicker": "Vida en Comunidad",
+        "titulo": "Nuestras Actividades",
+        "parrafo": "Cada actividad está pensada para fortalecer la fe, el carácter y la amistad entre los jóvenes de Iglesia Canaán.",
+        "items": {
+          "cultosJuveniles": {
+            "nombre": "Cultos Juveniles",
+            "descripcion": "Un espacio de adoración y enseñanza pensado para jóvenes, donde la Palabra de Dios se vive de manera dinámica y relevante."
+          },
+          "estudiosBiblicos": {
+            "nombre": "Estudios Bíblicos",
+            "descripcion": "Momentos de estudio profundo de las Escrituras que fortalecen el conocimiento y la fe de cada joven."
+          },
+          "campamentos": {
+            "nombre": "Campamentos",
+            "descripcion": "Días de retiro y convivencia fuera de la rutina, donde Dios transforma vidas a través de experiencias inolvidables."
+          },
+          "convivios": {
+            "nombre": "Convivios",
+            "descripcion": "Actividades de compañerismo que fortalecen los lazos de amistad y unidad entre los jóvenes de la iglesia."
+          },
+          "momentosEdc": {
+            "nombre": "Momentos EDC",
+            "descripcion": "Los mejores recuerdos capturados: risas, adoración y comunidad viviendo juntos su fe en Cristo."
+          }
+        },
+        "notaFinal": "Además de estas actividades, nuestros jóvenes cursan los módulos 1, 2 y 3 del CCDL como parte de su formación como discípulos y líderes."
+      },
+      "galeria": {
+        "kicker": "Momentos EDC",
+        "titulo": "Galería",
+        "parrafo": "Un vistazo a los momentos que hemos vivido juntos como jóvenes de Iglesia Canaán.",
+        "fotoAlt": "Foto de una actividad de Jóvenes ICAD"
+      },
+      "unete": {
+        "titulo": "Únete a",
+        "tituloResaltado": "Jóvenes ICAD",
+        "parrafo": "Sé parte de esta generación apasionada por Cristo. Ven a nuestros cultos juveniles y descubre el propósito que Dios tiene para tu vida.",
+        "btnConocerPrograma": "Conocer más",
+        "btnInsta": "Instagram"
+      }
+    },
+    "escuelaBiblica": {
+      "banner": {
+        "bienvenidos": "Bienvenidos",
+        "saberMas": "SABER MÁS"
+      },
+      "hero": {
+        "kicker": "Ministerio de Enseñanza Bíblica",
+        "titulo": "Escuela Bíblica",
+        "tituloResaltado": "Dominical",
+        "parrafo1": "La Escuela Bíblica Dominical es un ministerio dedicado a la enseñanza de la Biblia para todas las edades. Compartimos un tiempo de aprendizaje, comunión y crecimiento espiritual, donde niños, adolescentes, jóvenes y adultos fortalecen su fe a través del estudio de las Sagradas Escrituras.",
+        "parrafo2": "Nuestro deseo es que cada persona conozca más a Dios, viva conforme a Su Palabra y desarrolle una relación firme con Jesucristo.",
+        "citaReferencia": "Salmos 119:105",
+        "cita": "Lámpara es a mis pies tu palabra, y lumbrera a mi camino.",
+        "fotoAlt": "Clase de la Escuela Bíblica Dominical en la iglesia",
+        "fotoCaption": "Maestros de Escuela Bíblica Dominical."
+      },
+      "queEncontraras": {
+        "kicker": "Un espacio para crecer en la fe",
+        "titulo": "¿Qué encontrarás?",
+        "subtitulo": "Cada domingo te espera un tiempo diseñado para acercarte más a Dios y a Su Palabra.",
+        "items": {
+          "ensenanza": {
+            "titulo": "Enseñanza bíblica",
+            "descripcion": "Fundamentada en las Sagradas Escrituras."
+          },
+          "companerismo": {
+            "titulo": "Compañerismo",
+            "descripcion": "Un ambiente de comunión y crecimiento espiritual."
+          },
+          "clasesParaTodos": {
+            "titulo": "Clases para todos",
+            "descripcion": "Niños, adolescentes, jóvenes y adultos."
+          },
+          "maestros": {
+            "titulo": "Maestros comprometidos",
+            "descripcion": "Dedicados a la formación cristiana."
+          },
+          "vidaDiaria": {
+            "titulo": "Vida diaria",
+            "descripcion": "Herramientas para aplicar la Palabra de Dios cada día."
+          }
+        }
+      },
+      "clasesPorEdad": {
+        "kicker": "Un salón para cada edad",
+        "titulo": "Clases por Edades",
+        "subtitulo": "Cada grupo recibe una enseñanza adaptada a su etapa de crecimiento y vida.",
+        "grupos": {
+          "ninos": {
+            "nombre": "Niños",
+            "edad": "4 a 10 años",
+            "descripcion": "Aprenden las historias bíblicas a través del juego, la música y la creatividad."
+          },
+          "adolescentes": {
+            "nombre": "Adolescentes",
+            "edad": "11 a 14 años",
+            "descripcion": "Fortalecen su identidad en Cristo en una etapa de muchos cambios y preguntas."
+          },
+          "jovenes": {
+            "nombre": "Jóvenes",
+            "edad": "15 a 25 años",
+            "descripcion": "Profundizan en la Palabra y descubren su propósito y llamado."
+          },
+          "adultos": {
+            "nombre": "Adultos",
+            "edad": "26 años en adelante",
+            "descripcion": "Estudian la Biblia con profundidad para vivirla en familia, trabajo y comunidad."
+          }
+        }
+      },
+      "galeria": {
+        "kicker": "Momentos que marcan",
+        "titulo": "Galería de la Escuela Bíblica",
+        "subtitulo": "Un vistazo a nuestras clases, actividades que tenemos en nuestro campos de Escuela Biblica"
+      },
+      "unete": {
+        "titulo": "Únete a la",
+        "tituloResaltado": "Escuela Bíblica",
+        "parrafo": "Ven cada domingo y crece en el conocimiento de la Palabra de Dios junto a nuestra familia en Iglesia Canaán.",
+        "horario": "Domingos · Horario del Culto General",
+        "btnUbicacion": "Cómo llegar",
+        "btnWhatsapp": "WhatsApp"
+      }
     }
   }
 }

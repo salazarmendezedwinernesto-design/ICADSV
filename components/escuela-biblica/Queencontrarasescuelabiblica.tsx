@@ -2,66 +2,50 @@
 
 import { BookOpen, HeartHandshake, Users, Heart, Sprout } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import SafeComponent from "../icad/SafeComponent";
 
+// Paleta corporativa: Azul (fidelidad/verdad), Rojo (sangre de Cristo/fuego del
+// Espíritu), Dorado (luz de Cristo/gloria de Dios), Negro (usado con moderación).
 const ITEMS = [
+  { key: "ensenanza", color: "#0B1F4D", colorSoft: "#E9ECF5", Icon: BookOpen },
   {
-    titulo: "Enseñanza bíblica",
-    descripcion: "Fundamentada en las Sagradas Escrituras.",
+    key: "companerismo",
     color: "#B8860B",
     colorSoft: "#FDF4DC",
-    Icon: BookOpen,
-  },
-  {
-    titulo: "Compañerismo",
-    descripcion: "Un ambiente de comunión y crecimiento espiritual.",
-    color: "#0E9BC7",
-    colorSoft: "#E7F8FC",
     Icon: HeartHandshake,
   },
   {
-    titulo: "Clases para todos",
-    descripcion: "Niños, adolescentes, jóvenes y adultos.",
-    color: "#0B1F4D",
-    colorSoft: "#E9ECF5",
-    Icon: Users,
-  },
-  {
-    titulo: "Maestros comprometidos",
-    descripcion: "Dedicados a la formación cristiana.",
+    key: "clasesParaTodos",
     color: "#C8102E",
     colorSoft: "#FBE9EC",
-    Icon: Heart,
+    Icon: Users,
   },
-  {
-    titulo: "Vida diaria",
-    descripcion: "Herramientas para aplicar la Palabra de Dios cada día.",
-    color: "#1FA24A",
-    colorSoft: "#E7F7EC",
-    Icon: Sprout,
-  },
-];
+  { key: "maestros", color: "#0B1F4D", colorSoft: "#E9ECF5", Icon: Heart },
+  { key: "vidaDiaria", color: "#B8860B", colorSoft: "#FDF4DC", Icon: Sprout },
+] as const;
 
 export default function QueEncontrarasEscuelaBiblica() {
+  const t = useTranslations("app.escuelaBiblica.queEncontraras");
+
   return (
     <SafeComponent>
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-white relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <span className="block text-center text-xs sm:text-sm font-bold tracking-[4px] uppercase text-[#B8860B] mb-3">
-            Un espacio para crecer en la fe
+            {t("kicker")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-4 text-[#0B1F4D]">
-            ¿Qué encontrarás?
+            {t("titulo")}
           </h2>
           <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12 sm:mb-16">
-            Cada domingo te espera un tiempo diseñado para acercarte más a Dios
-            y a Su Palabra.
+            {t("subtitulo")}
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {ITEMS.map((item, i) => (
               <motion.div
-                key={item.titulo}
+                key={item.key}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -87,10 +71,10 @@ export default function QueEncontrarasEscuelaBiblica() {
                     className="text-lg font-bold mb-2"
                     style={{ color: item.color }}
                   >
-                    {item.titulo}
+                    {t(`items.${item.key}.titulo`)}
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    {item.descripcion}
+                    {t(`items.${item.key}.descripcion`)}
                   </p>
                 </div>
               </motion.div>

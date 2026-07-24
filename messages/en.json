@@ -343,6 +343,150 @@
         "btnConocerPrograma": "Learn about the program",
         "btnWhatsapp": "WhatsApp"
       }
+    },
+    "edc": {
+      "banner": {
+        "kicker": "ICAD YOUTH",
+        "titulo": "We are the youth of Iglesia Canaán El Refugio, a generation passionate about Christ.",
+        "saberMas": "Learn more",
+        "logoAlt": "Logo of the Ambassadors for Christ (EDC) ministry"
+      },
+      "quienesSomos": {
+        "kicker": "Who We Are",
+        "titulo": "Ambassadors for",
+        "tituloResaltado": "Christ",
+        "parrafo1": "Ambassadors for Christ (EDC) is the youth ministry of the Assemblies of God, dedicated to forming a generation passionate about Jesus, firm in the faith, and committed to serving God and their community.",
+        "parrafo2": "At ICAD Youth, we provide a space where teenagers and young adults strengthen their relationship with God, develop their leadership, and discover the gifts He has given them. Through youth services, Bible studies, camps and fellowship activities, we promote spiritual growth and a life centered on Christ.",
+        "parrafo3": "As part of their formation, our young people also take part in the Training Center for Disciples and Leaders (CCDL), completing modules 1, 2 and 3 to strengthen their knowledge of God's Word and prepare to serve with excellence.",
+        "btnConocerMas": "Learn more",
+        "fotoAlt": "Ambassadors for Christ youth at a church activity",
+        "fotoCaption": "ICAD Youth"
+      },
+      "actividades": {
+        "kicker": "Life in Community",
+        "titulo": "Our Activities",
+        "parrafo": "Every activity is designed to strengthen the faith, character and friendship among the young people of Iglesia Canaán.",
+        "items": {
+          "cultosJuveniles": {
+            "nombre": "Youth Services",
+            "descripcion": "A space for worship and teaching designed for young people, where God's Word comes alive in a dynamic and relevant way."
+          },
+          "estudiosBiblicos": {
+            "nombre": "Bible Studies",
+            "descripcion": "Times of in-depth study of Scripture that strengthen each young person's knowledge and faith."
+          },
+          "campamentos": {
+            "nombre": "Camps",
+            "descripcion": "Days of retreat and fellowship away from the routine, where God transforms lives through unforgettable experiences."
+          },
+          "convivios": {
+            "nombre": "Fellowship Gatherings",
+            "descripcion": "Fellowship activities that strengthen the bonds of friendship and unity among the church's young people."
+          },
+          "momentosEdc": {
+            "nombre": "EDC Moments",
+            "descripcion": "The best memories captured: laughter, worship and community living out their faith in Christ together."
+          }
+        },
+        "notaFinal": "In addition to these activities, our young people complete CCDL modules 1, 2 and 3 as part of their formation as disciples and leaders."
+      },
+      "galeria": {
+        "kicker": "EDC Moments",
+        "titulo": "Gallery",
+        "parrafo": "A look at the moments we've shared together as the youth of Iglesia Canaán.",
+        "fotoAlt": "Photo from an ICAD Youth activity"
+      },
+      "unete": {
+        "titulo": "Join",
+        "tituloResaltado": "ICAD Youth",
+        "parrafo": "Be part of this generation passionate about Christ. Come to our youth services and discover the purpose God has for your life.",
+        "btnConocerPrograma": "Learn more",
+        "btnInsta": "Instagram"
+      }
+    },
+    "escuelaBiblica": {
+      "banner": {
+        "bienvenidos": "Welcome",
+        "saberMas": "LEARN MORE"
+      },
+      "hero": {
+        "kicker": "Bible Teaching Ministry",
+        "titulo": "Sunday Bible",
+        "tituloResaltado": "School",
+        "parrafo1": "The Sunday School is a ministry dedicated to teaching the Bible to all ages. We share a time of learning, fellowship, and spiritual growth, where children, adolescents, young adults, and adults strengthen their faith through the study of the Holy Scriptures.",
+        "parrafo2": "Our desire is for every person to know God more, live according to His Word and develop a firm relationship with Jesus Christ.",
+        "citaReferencia": "Psalm 119:105",
+        "cita": "Your word is a lamp to my feet and a light to my path.",
+        "fotoAlt": "Sunday Bible School class at the church",
+        "fotoCaption": "Sunday School Teachers."
+      },
+      "queEncontraras": {
+        "kicker": "A space to grow in faith",
+        "titulo": "What will you find?",
+        "subtitulo": "Every Sunday a time designed to draw you closer to God and His Word awaits you.",
+        "items": {
+          "ensenanza": {
+            "titulo": "Bible teaching",
+            "descripcion": "Grounded in the Holy Scriptures."
+          },
+          "companerismo": {
+            "titulo": "Fellowship",
+            "descripcion": "An environment of community and spiritual growth."
+          },
+          "clasesParaTodos": {
+            "titulo": "Classes for everyone",
+            "descripcion": "Children, teens, young people and adults."
+          },
+          "maestros": {
+            "titulo": "Committed teachers",
+            "descripcion": "Devoted to Christian formation."
+          },
+          "vidaDiaria": {
+            "titulo": "Daily life",
+            "descripcion": "Tools to apply God's Word every day."
+          }
+        }
+      },
+      "clasesPorEdad": {
+        "kicker": "A classroom for every age",
+        "titulo": "Classes by Age",
+        "subtitulo": "Each group receives teaching adapted to their stage of growth and life.",
+        "grupos": {
+          "ninos": {
+            "nombre": "Children",
+            "edad": "4 to 10 years old",
+            "descripcion": "They learn Bible stories through play, music and creativity."
+          },
+          "adolescentes": {
+            "nombre": "Teens",
+            "edad": "11 to 14 years old",
+            "descripcion": "They strengthen their identity in Christ through a stage full of changes and questions."
+          },
+          "jovenes": {
+            "nombre": "Young Adults",
+            "edad": "15 to 25 years old",
+            "descripcion": "They dig deeper into the Word and discover their purpose and calling."
+          },
+          "adultos": {
+            "nombre": "Adults",
+            "edad": "26 years old and up",
+            "descripcion": "They study the Bible in depth to live it out in family, work and community."
+          }
+        }
+      },
+      "galeria": {
+        "kicker": "Moments that matter",
+        "titulo": "Bible School Gallery",
+        "subtitulo": "A look at our classes and activities at our Bible School campus."
+      },
+      "unete": {
+        "titulo": "Join",
+        "tituloResaltado": "Bible School",
+        "parrafo": "Come every Sunday and grow in the knowledge of God's Word together with our church family at Canaan Church.",
+        "horario": "Sundays · General Service schedule",
+        "btnUbicacion": "Get directions",
+        "btnWhatsapp": "WhatsApp"
+      }
     }
   }
 }

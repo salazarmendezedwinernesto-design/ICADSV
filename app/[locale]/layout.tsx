@@ -52,6 +52,7 @@ export default async function RootLayout({
     <NextIntlClientProvider messages={messages} locale={locale}>
       <div className="relative min-h-full flex flex-col">
         <HeaderSwitch />
+
         <main>{children}</main>
         <Footer />
       </div>

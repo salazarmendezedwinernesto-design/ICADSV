@@ -1,9 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import SafeComponent from "../icad/SafeComponent";
 
 export default function PropositoEscuelaBiblica() {
+  const t = useTranslations("app.escuelaBiblica.proposito");
+
   return (
     <SafeComponent>
       <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-[#0B1F4D] relative overflow-hidden">
@@ -12,10 +15,10 @@ export default function PropositoEscuelaBiblica() {
 
         <div className="max-w-4xl mx-auto relative text-center">
           <span className="block text-xs sm:text-sm font-bold tracking-[4px] uppercase text-[#F2B705] mb-3">
-            Nuestro propósito
+            {t("kicker")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-8 text-white">
-            Conocer la Biblia transforma vidas
+            {t("titulo")}
           </h2>
 
           <motion.div
@@ -26,9 +29,7 @@ export default function PropositoEscuelaBiblica() {
             className="bg-white/6 backdrop-blur-sm border border-white/10 rounded-2xl px-6 sm:px-10 py-8 sm:py-10"
           >
             <p className="text-base sm:text-lg text-[#CFE9F2] leading-relaxed">
-              Por eso, la Escuela Bíblica Dominical busca formar discípulos que
-              amen a Dios, sirvan con fidelidad y reflejen a Cristo en su
-              familia, su iglesia y su comunidad.
+              {t("texto")}
             </p>
           </motion.div>
         </div>
